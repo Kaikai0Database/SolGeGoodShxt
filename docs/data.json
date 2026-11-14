@@ -1,0 +1,2579 @@
+{
+ "exported_at": "2026-11-14T16:34:20+00:00",
+ "repos": [
+  {
+   "full_name": "qybaihe/bla",
+   "html_url": "https://github.com/qybaihe/bla",
+   "description": "🛡️ BLA (Blind LLM Agents) — Adversarial defense shield that protects binaries, Electron apps, JS bundles, Python, and WebAssembly against AI reverse-engineering agents like REA. Poison -> Exhaust -> Hallucinate.",
+   "stars": 4899,
+   "license": "MIT",
+   "language": "TypeScript",
+   "topics": [
+    "adversarial-ai",
+    "claude-code",
+    "cursor",
+    "electron-security",
+    "llm-security",
+    "mcp",
+    "mcp-server",
+    "obfuscation",
+    "reverse-engineering",
+    "webassembly"
+   ],
+   "summary": "BLA 是防禦 AI 反向工程的工具，讓軟體更難被破解。",
+   "audience": "軟體開發者與安全團隊保護專屬知識產權",
+   "use_cases": [
+    {
+     "title": "保護 Electron 應用程式",
+     "how": "使用 BLA 對 Electron 應用進行加殼與混淆，防止 AI 反向工程"
+    },
+    {
+     "title": "防禦 AI 破解 WebAssembly",
+     "how": "透過 BLA 的格式防護機制，讓 AI 無法解析 WebAssembly 檔案"
+    },
+    {
+     "title": "保護 Python 應用程式",
+     "how": "使用 BLA 對 Python 應用進行混淆與封裝，防止 AI 反向工程"
+    }
+   ],
+   "mermaid": "flowchart LR\n  n0[\"審計\"]\n  n1[\"語法檢查\"]\n  n2[\"編織計畫\"]\n  n3[\"加密字串\"]\n  n4[\"綁定作用域\"]\n  n5[\"驗證編織\"]\n  n6[\"強化保護\"]\n  n7[\"防禦機制\"]\n  n8[\"驗證防禦\"]\n  n0 -->|輸出計畫| n2\n  n1 -->|輸出計畫| n2\n  n2 -->|輸出加密| n3\n  n3 -->|輸出綁定| n4\n  n4 -->|輸出驗證| n5\n  n5 -->|輸出強化| n6\n  n6 -->|輸出防禦| n7\n  n7 -->|輸出驗證| n8",
+   "analyzed_at": 1794330280.1777909
+  },
+  {
+   "full_name": "cloudflare/security-audit-skill",
+   "html_url": "https://github.com/cloudflare/security-audit-skill",
+   "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+   "stars": 68852,
+   "license": "MIT",
+   "language": "JavaScript",
+   "topics": [],
+   "summary": "自動化安全審計工具，找出程式碼中的潛在漏洞",
+   "audience": "需要進行安全審計的開發者與企業安全團隊",
+   "use_cases": [
+    {
+     "title": "企業內部安全審計",
+     "how": "透過工具自動掃描程式碼，生成漏洞報告，協助企業發現潛在風險"
+    },
+    {
+     "title": "第三方安全服務提供",
+     "how": "將工具整合至服務中，為客戶提供專業的漏洞檢測與報告服務"
+    },
+    {
+     "title": "開源專案安全評估",
+     "how": "用於評估開源專案的安全性，協助維護者發現並修復潛在問題"
+    }
+   ],
+   "mermaid": "flowchart LR\n  n0[\"情報收集\"]\n  n1[\"覆蓋導向獵尋\"]\n  n2[\"候選驗證\"]\n  n3[\"結構化輸出\"]\n  n4[\"獨立驗證\"]\n  n5[\"目標中立報告\"]\n  n6[\"驗證器\"]\n  n0 -->|輸出| n1\n  n1 -->|輸出| n2\n  n2 -->|輸出| n3\n  n3 -->|輸出| n4\n  n4 -->|輸出| n5\n  n3 -->|驗證| n6\n  n6 -->|反饋| n3",
+   "analyzed_at": 1794329987.1109612
+  },
+  {
+   "full_name": "trufflesecurity/trufflehog",
+   "html_url": "https://github.com/trufflesecurity/trufflehog",
+   "description": "Find, verify, and analyze leaked credentials",
+   "stars": 29156,
+   "license": "AGPL-3.0",
+   "language": "Go",
+   "topics": [
+    "credentials",
+    "devsecops",
+    "dynamic-analysis",
+    "precommit",
+    "scanning",
+    "secret",
+    "secret-management",
+    "secrets",
+    "security",
+    "security-tools",
+    "trufflehog",
+    "verification"
+   ],
+   "summary": "找出並分析外洩的帳號密碼等敏感資訊",
+   "audience": "開發者與安全團隊",
+   "use_cases": [
+    {
+     "title": "企業密碼掃描服務",
+     "how": "提供企業級密碼掃描服務，持續監控Git等平台，收取訂閱費用"
+    },
+    {
+     "title": "安全工具整合銷售",
+     "how": "與CI/CD工具整合，作為安全檢查環節，透過工具銷售獲利"
+    },
+    {
+     "title": "雲端服務安全諮詢",
+     "how": "為企業提供雲端服務密碼管理建議，收取諮詢費用"
+    }
+   ],
+   "mermaid": "flowchart LR\n  n0[\"密碼掃描引擎\"]\n  n1[\"資料來源\"]\n  n2[\"類別辨識\"]\n  n3[\"驗證器\"]\n  n4[\"分析引擎\"]\n  n5[\"報告生成器\"]\n  n6[\"API閘道\"]\n  n7[\"使用者介面\"]\n  n8[\"資料庫\"]\n  n9[\"通知中心\"]\n  n1 -->|資料輸入| n0\n  n0 -->|傳遞結果| n2\n  n2 -->|傳遞類別| n3\n  n3 -->|傳遞驗證結果| n4\n  n4 -->|傳遞分析結果| n5\n  n5 -->|生成報告| n7\n  n7 -->|發送通知| n9\n  n1 -->|儲存資料| n8\n  n6 -->|API存取| n7",
+   "analyzed_at": 1794329979.2299776
+  },
+  {
+   "full_name": "nutlope/hallmark",
+   "html_url": "https://github.com/Nutlope/hallmark",
+   "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
+   "stars": 52301,
+   "license": "MIT",
+   "language": "CSS",
+   "topics": [],
+   "summary": "幫 AI 生成的網頁加裝設計風格，讓它看起來更像人手設計的網頁。",
+   "audience": "網頁設計師、AI 編程工具使用者、創業者",
+   "use_cases": [
+    {
+     "title": "AI 網頁設計服務",
+     "how": "提供 AI 生成網頁的設計風格，讓客戶覺得更專業，提高服務價值。"
+    },
+    {
+     "title": "網站重設計與審查",
+     "how": "用 Hallmark 重設計現有網站，並審查 AI 生成的網頁是否符合人手設計標準。"
+    },
+    {
+     "title": "企業品牌網頁製作",
+     "how": "根據企業品牌需求，用 Hallmark 生成符合品牌風格的網頁，提升品牌形象。"
+    }
+   ],
+   "mermaid": "flowchart LR\n  n0[\"提示詞\"]\n  n1[\"主題\"]\n  n2[\"設計生成\"]\n  n3[\"風格檢查\"]\n  n4[\"輸出網頁\"]\n  n5[\"審查\"]\n  n6[\"截圖\"]\n  n7[\"審計\"]\n  n8[\"重設計\"]\n  n9[\"客製化\"]\n  n0 -->|選擇主題| n1\n  n1 -->|生成設計| n2\n  n2 -->|風格檢查| n3\n  n3 -->|生成網頁| n4\n  n4 -->|審查結果| n5\n  n5 -->|截圖檢查| n6\n  n6 -->|審計分析| n7\n  n7 -->|重設計| n8\n  n8 -->|客製化設計| n9",
+   "analyzed_at": 1794324290.933162
+  },
+  {
+   "full_name": "eneskirca/nodeterm",
+   "html_url": "https://github.com/eneskirca/nodeterm",
+   "description": "Node-based terminal manager for AI coding agents — tmux-backed terminals and parallel agent sessions as draggable nodes on an infinite pan/zoom canvas. macOS, Linux, and a browser Server Edition.",
+   "stars": 2491,
+   "license": "其他",
+   "language": "TypeScript",
+   "topics": [
+    "adhd",
+    "agent-orchestration",
+    "ai-agents",
+    "canvas",
+    "claude-code",
+    "codex",
+    "coding-agents",
+    "developer-tools",
+    "electron",
+    "gemini",
+    "linux",
+    "macos",
+    "multiplexer",
+    "opencode",
+    "parallel-agents",
+    "terminal",
+    "terminal-emulator",
+    "terminal-multiplexer",
+    "tmux",
+    "workspace-manager"
+   ],
+   "summary": "以拖拽節點方式管理終端機與AI代理，視覺化工作流程。",
+   "audience": "需要視覺化工作流程的開發者與AI代理管理者",
+   "use_cases": [
+    {
+     "title": "AI代理協作開發",
+     "how": "將不同AI代理設為節點，透過節點間的連結共享上下文，提升團隊協作效率"
+    },
+    {
+     "title": "遠端開發與監控",
+     "how": "透過瀏覽器端自建服務，遠端監控與管理多個終端機與AI代理的執行狀態"
+    },
+    {
+     "title": "個人工作流程優化",
+     "how": "將終端機與任務視覺化，透過拖拽與分組管理，提升個人開發效率與專注力"
+    }
+   ],
+   "mermaid": "flowchart LR\n  n0[\"畫布\"]\n  n1[\"終端機\"]\n  n2[\"AI代理\"]\n  n3[\"便簽\"]\n  n4[\"編輯器\"]\n  n5[\"差異視圖\"]\n  n6[\"網頁/影片\"]\n  n7[\"看板\"]\n  n8[\"遠端存取\"]\n  n9[\"tmux\"]\n  n0 -->|顯示| n1\n  n0 -->|連結| n2\n  n0 -->|附加| n3\n  n0 -->|嵌入| n4\n  n0 -->|對照| n5\n  n0 -->|嵌入| n6\n  n0 -->|同步| n7\n  n0 -->|連接| n9\n  n7 -->|更新| n0\n  n9 -->|管理| n1",
+   "analyzed_at": 1794284786.520098
+  },
+  {
+   "full_name": "milind-soni/openmausbot",
+   "html_url": "https://github.com/milind-soni/OpenMausBot",
+   "description": "Open-source Grok Bot alternative with a virtual machine that bots can use",
+   "stars": 18700,
+   "license": "Apache-2.0",
+   "language": "TypeScript",
+   "topics": [
+    "ai-agents",
+    "claude-code",
+    "codex",
+    "computer-use",
+    "docker",
+    "electron",
+    "grok",
+    "grok-bot",
+    "grok-bot-alternative",
+    "self-hosted",
+    "typescript"
+   ],
+   "summary": "打造自己的AI聊天團隊，每個AI都有自己的模型與電腦。",
+   "audience": "想要自建AI代理團隊的個人與企業用戶",
+   "use_cases": [
+    {
+     "title": "企業內部AI助手",
+     "how": "企業可自建多個AI助手，各自使用不同模型，處理不同任務，如客服、資料分析等。"
+    },
+    {
+     "title": "個人AI助理",
+     "how": "個人可建立多個AI助理，如一個用Claude處理文書，一個用Codex寫程式，各自獨立運作。"
+    },
+    {
+     "title": "AI代理服務供應商",
+     "how": "提供AI代理服務的公司可透過OpenMausBot建立自有的AI團隊，並出租給客戶使用。"
+    }
+   ],
+   "mermaid": "flowchart LR\n  n0[\"Electron\"]\n  n1[\"Docker\"]\n  n2[\"Virtual Machine\"]\n  n3[\"Claude\"]\n  n4[\"Codex\"]\n  n5[\"Grok\"]\n  n6[\"Composio\"]\n  n7[\"Settings\"]\n  n8[\"Transcripts\"]\n  n9[\"LocalStorage\"]\n  n0 -->|啟動| n1\n  n1 -->|部署| n2\n  n2 -->|執行| n3\n  n2 -->|執行| n4\n  n2 -->|執行| n5\n  n7 -->|配置| n2\n  n2 -->|連接| n6\n  n2 -->|儲存| n9\n  n2 -->|紀錄| n8",
+   "analyzed_at": 1794204680.91989
+  },
+  {
+   "full_name": "danyuchn/claude-work-mode",
+   "html_url": "https://github.com/danyuchn/claude-work-mode",
+   "description": "Session work modes for Claude Code: /work-mode auto | out | wrap, with optional gates",
+   "stars": 72,
+   "license": "MIT",
+   "language": "TypeScript",
+   "topics": [],
+   "summary": "讓 Claude Code 透過指令切換工作模式，提升效率與安全性",
+   "audience": "使用 Claude Code 進行開發與資料處理的專業人士",
+   "use_cases": [
+    {
+     "title": "自動化處理非關鍵任務",
+     "how": "啟用 auto 模式，讓模型自動處理可逆操作，僅在關鍵操作時提示確認"
+    },
+    {
+     "title": "委託外部工具驗證結果",
+     "how": "啟用 out 模式，將任務委託給外部 CLI 或子代理，主線程進行驗證"
+    },
+    {
+     "title": "集中處理決策項目",
+     "how": "啟用 wrap 模式，集中處理所有未完成的決策項目，並標註建議"
+    }
+   ],
+   "mermaid": "flowchart LR\n  n0[\"使用者\"]\n  n1[\"Claude Code\"]\n  n2[\"工作模式\"]\n  n3[\"子代理\"]\n  n4[\"外部 CLI\"]\n  n5[\"Tempo Auto\"]\n  n6[\"Git\"]\n  n7[\"決策標籤\"]\n  n8[\"配置\"]\n  n9[\"配額檔案\"]\n  n0 -->|指令| n1\n  n1 -->|切換模式| n2\n  n2 -->|委託| n3\n  n2 -->|委託| n4\n  n2 -->|觸發| n5\n  n5 -->|驗證| n6\n  n5 -->|標籤| n7\n  n8 -->|配置| n2\n  n9 -->|配額| n2",
+   "analyzed_at": 1794152520.2243655
+  },
+  {
+   "full_name": "aientech/dossier",
+   "html_url": "https://github.com/AienTech/dossier",
+   "description": "A self-hosted job search and resume builder app that writes tailored resumes and cover letters from your profile.",
+   "stars": 4619,
+   "license": "AGPL-3.0",
+   "language": "TypeScript",
+   "topics": [
+    "caprover",
+    "cover-letter",
+    "docker",
+    "job-application-tracker",
+    "job-search",
+    "llm",
+    "local-llm",
+    "nextjs",
+    "ollama",
+    "postgresql",
+    "resume",
+    "self-hosted",
+    "typescript"
+   ],
+   "summary": "自建伺服器找工作，自動生成履歷與求職信，並追蹤每份申請進度。",
+   "audience": "需要自建伺服器、重視資料隱私的求職者與企業人才",
+   "use_cases": [
+    {
+     "title": "企業人才管理系統",
+     "how": "企業自建伺服器，用來管理內部人才資料，自動生成求職信與履歷，提升招聘效率"
+    },
+    {
+     "title": "自由工作者求職工具",
+     "how": "自由工作者使用自建伺服器，生成符合不同工作需求的履歷與求職信，提高申請成功率"
+    },
+    {
+     "title": "私有化求職平台",
+     "how": "企業或組織自建求職平台，整合內部人才資料，自動匹配工作需求，生成申請文件並追蹤進度"
+    }
+   ],
+   "mermaid": "flowchart LR\n  n0[\"前端\"]\n  n1[\"後端\"]\n  n2[\"資料庫\"]\n  n3[\"AI模型\"]\n  n4[\"求職搜尋\"]\n  n5[\"申請追蹤\"]\n  n6[\"郵件服務\"]\n  n7[\"行事曆整合\"]\n  n8[\"資料匯出/匯入\"]\n  n9[\"備份系統\"]\n  n0 -->|請求| n1\n  n1 -->|資料存取| n2\n  n1 -->|生成文件| n3\n  n4 -->|搜尋結果| n1\n  n5 -->|申請狀態| n1\n  n6 -->|郵件發送| n1\n  n7 -->|日程同步| n1\n  n8 -->|資料轉換| n2\n  n9 -->|備份資料| n2",
+   "analyzed_at": 1793960491.3254762
+  },
+  {
+   "full_name": "anhao/ai-pose-gallery-zh",
+   "html_url": "https://github.com/anhao/ai-pose-gallery-zh",
+   "description": "中文版 AI 姿势参考图库 · 1439 组 / 2878 张图片 / 完整汉化 · 零依赖静态画廊",
+   "stars": 6157,
+   "license": "其他",
+   "language": "TypeScript",
+   "topics": [
+    "ai-art",
+    "chinese",
+    "cloudflare-pages",
+    "gallery",
+    "i18n",
+    "pose",
+    "reference-images",
+    "static-site"
+   ],
+   "summary": "提供中文化AI角色参考图库，可直接用于生成艺术创作。",
+   "audience": "AI绘画创作者、角色设计师、游戏开发者",
+   "use_cases": [
+    {
+     "title": "AI绘画参考图库",
+     "how": "提供姿势、服装、人像等参考图，用于AI绘画生成"
+    },
+    {
+     "title": "角色设计素材库",
+     "how": "整合多类型服装与姿势，用于角色设定与设计"
+    },
+    {
+     "title": "AI合成工作台",
+     "how": "支持三合一角色配方合成，直接生成艺术作品"
+    }
+   ],
+   "mermaid": "flowchart LR\n  n0[\"图库\"]\n  n1[\"合成台\"]\n  n2[\"ComfyUI\"]\n  n3[\"API\"]\n  n4[\"数据库\"]\n  n5[\"存储\"]\n  n6[\"前端\"]\n  n7[\"节点\"]\n  n8[\"工作流\"]\n  n9[\"缓存\"]\n  n0 -->|数据| n1\n  n1 -->|请求| n2\n  n2 -->|响应| n3\n  n3 -->|数据| n6\n  n4 -->|存储| n5\n  n5 -->|读取| n6\n  n7 -->|执行| n8\n  n8 -->|缓存| n9",
+   "analyzed_at": 1793951625.260259
+  },
+  {
+   "full_name": "pika-labs/pika-h3-flex",
+   "html_url": "https://github.com/Pika-Labs/Pika-H3-Flex",
+   "description": "Pika H3 Flex: video and audio generation inference",
+   "stars": 1944,
+   "license": "其他",
+   "language": "Python",
+   "topics": [],
+   "summary": "Pika H3 Flex 可以將文字、圖片或影片轉換成帶有同步音效的視頻，適合專業創作者使用。",
+   "audience": "專業創作者、動畫師、影片製作者",
+   "use_cases": [
+    {
+     "title": "多鏡頭敘事影片製作",
+     "how": "透過文字與參考影片，生成多鏡頭敘事影片，用於廣告或短片製作。"
+    },
+    {
+     "title": "動態圖形與字幕設計",
+     "how": "結合文字與動畫參考，生成動態圖形與字幕動畫，用於品牌影片或活動宣傳。"
+    },
+    {
+     "title": "產品影片與音效設計",
+     "how": "利用參考圖片與音效，生成高品質產品影片，搭配專業音效設計，提升產品展示效果。"
+    }
+   ],
+   "mermaid": "flowchart LR\n  n0[\"提示編碼器\"]\n  n1[\"輸入媒體編碼器\"]\n  n2[\"FL2VA 适配器\"]\n  n3[\"Ref2VA 适配器\"]\n  n4[\"視頻與音效潛在生成器\"]\n  n5[\"解碼器\"]\n  n6[\"MP4 編碼器\"]\n  n7[\"JSON 元數據生成器\"]\n  n0 -->|傳遞提示| n2\n  n1 -->|傳遞媒體| n3\n  n2 -->|生成潛在| n4\n  n3 -->|生成潛在| n4\n  n4 -->|解碼生成| n5\n  n5 -->|生成 MP4| n6\n  n5 -->|生成元數據| n7",
+   "analyzed_at": 1793938640.9700737
+  },
+  {
+   "full_name": "ai-job-search-dev/ai-job-search",
+   "html_url": "https://github.com/ai-job-search-dev/ai-job-search",
+   "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
+   "stars": 69912,
+   "license": "MIT",
+   "language": "Python",
+   "topics": [
+    "ai",
+    "ai-agents",
+    "career",
+    "claude-code",
+    "cover-letter",
+    "cv",
+    "interview-preparation",
+    "job-application",
+    "job-hunting",
+    "job-search",
+    "latex",
+    "resume"
+   ],
+   "summary": "AI 自動化找工作，評估職缺、修改履歷、寫求職信、準備面試。",
+   "audience": "想用 AI 找工作、自學求職技巧的初進職場者",
+   "use_cases": [
+    {
+     "title": "企業用 AI 自動化招聘",
+     "how": "整合到 HR 系統，自動篩選簡歷與面試安排"
+    },
+    {
+     "title": "自由業者快速更新履歷",
+     "how": "根據不同職缺自動調整履歷與求職信內容"
+    },
+    {
+     "title": "個人化職涯諮詢服務",
+     "how": "提供 AI 分析職場趨勢與薪資參考標準"
+    }
+   ],
+   "mermaid": "flowchart LR\n  n0[\"Claude Code\"]\n  n1[\"個人資料\"]\n  n2[\"職缺平台\"]\n  n3[\"履歷產生器\"]\n  n4[\"求職信產生器\"]\n  n5[\"面試準備\"]\n  n6[\"ATS 解析器\"]\n  n7[\"結果追蹤\"]\n  n8[\"LaTeX 引擎\"]\n  n9[\"PDF 提取器\"]\n  n0 -->|讀取資料| n1\n  n1 -->|搜尋職缺| n2\n  n2 -->|生成履歷| n3\n  n2 -->|生成求職信| n4\n  n3 -->|解析 ATS| n6\n  n4 -->|追蹤結果| n7\n  n8 -->|產生 PDF| n3\n  n9 -->|提取文字| n6\n  n5 -->|追蹤面試| n7",
+   "analyzed_at": 1793938479.3671796
+  },
+  {
+   "full_name": "0x0funky/agent-sprite-forge",
+   "html_url": "https://github.com/0x0funky/agent-sprite-forge",
+   "description": "Agent Skill for generating 2D sprite sheets and map, transparent PNG frames, and animated GIFs from prompts.",
+   "stars": 5206,
+   "license": "MIT",
+   "language": "Python",
+   "topics": [
+    "agent-skills",
+    "codex",
+    "pixel-art",
+    "sprite-generator"
+   ],
+   "summary": "透過提示生成 2D 動畫角色與地圖，支援透明 PNG 與動畫 GIF 输出。",
+   "audience": "遊戲開發者與像素藝術創作者",
+   "use_cases": [
+    {
+     "title": "遊戲角色動畫製作",
+     "how": "透過提示生成角色靜態圖，再轉換為動畫片段，供遊戲引擎使用。"
+    },
+    {
+     "title": "像素藝術素材生成",
+     "how": "根據提示生成高品質像素藝術素材，支援透明背景與動畫格式。"
+    },
+    {
+     "title": "遊戲地圖與場景設計",
+     "how": "生成遊戲地圖與場景素材，支援 Tiled 等地圖編輯器格式輸出。"
+    }
+   ],
+   "mermaid": "flowchart LR\n  n0[\"提示輸入\"]\n  n1[\"圖像生成\"]\n  n2[\"影像片段\"]\n  n3[\"遮罩處理\"]\n  n4[\"時間控制\"]\n  n5[\"動畫集生成\"]\n  n6[\"格式輸出\"]\n  n0 -->|傳送提示| n1\n  n1 -->|生成影像| n2\n  n2 -->|影像處理| n3\n  n3 -->|時間校準| n4\n  n4 -->|生成動畫| n5\n  n5 -->|輸出格式| n6",
+   "analyzed_at": 1793918994.7820733
+  },
+  {
+   "full_name": "wangzan101/mika",
+   "html_url": "https://github.com/wangzan101/Mika",
+   "description": "An on-device AI agent for Android that operates apps and the web to get things done for you.",
+   "stars": 7072,
+   "license": "Apache-2.0",
+   "language": "Kotlin",
+   "topics": [
+    "accessibility",
+    "ai-agent",
+    "android",
+    "automation",
+    "jetpack-compose",
+    "kotlin",
+    "llm",
+    "mobile-agent"
+   ],
+   "summary": "手機AI助手，用一句話操控APP與網頁完成任務。",
+   "audience": "需要自動化手機操作與網頁任務的用戶",
+   "use_cases": [
+    {
+     "title": "自動處理購物車商品",
+     "how": "根據指令篩選商品並加入購物車，自動完成結帳流程"
+    },
+    {
+     "title": "自動回覆社交媒體訊息",
+     "how": "讀取社交媒體訊息並自動回覆，節省手動回覆時間"
+    },
+    {
+     "title": "自動整理網頁資訊",
+     "how": "從網頁中提取關鍵資訊並整理成摘要，方便快速閱讀"
+    }
+   ],
+   "mermaid": "flowchart LR\n  n0[\"使用者介面\"]\n  n1[\"語音辨識\"]\n  n2[\"AI模型\"]\n  n3[\"APP控制\"]\n  n4[\"網頁瀏覽器\"]\n  n5[\"任務排程\"]\n  n6[\"資料儲存\"]\n  n7[\"通知系統\"]\n  n8[\"檔案處理\"]\n  n9[\"安全管理\"]\n  n0 -->|語音輸入| n1\n  n1 -->|語意解析| n2\n  n2 -->|指令發送| n3\n  n2 -->|網頁操作| n4\n  n3 -->|任務排程| n5\n  n5 -->|通知發送| n7\n  n5 -->|資料儲存| n6\n  n8 -->|檔案處理| n6\n  n9 -->|資料加密| n6",
+   "analyzed_at": 1793918511.7350438
+  },
+  {
+   "full_name": "bytechefhq/bytechef",
+   "html_url": "https://github.com/bytechefhq/bytechef",
+   "description": "Open-source AI agents and workflow automation. Self-host or embed in your SaaS. Apache 2.0 alternative to n8n and Zapier.",
+   "stars": 1057,
+   "license": "其他",
+   "language": "Java",
+   "topics": [
+    "ai",
+    "ai-agents",
+    "api",
+    "automation",
+    "embedded-ipaas",
+    "hacktoberfest",
+    "integrations",
+    "ipaas",
+    "java",
+    "llm",
+    "low-code",
+    "mcp",
+    "n8n",
+    "no-code",
+    "self-hosted",
+    "typescript",
+    "workato",
+    "workflow",
+    "workflow-automation",
+    "zapier"
+   ],
+   "summary": "透過 AI 代理人與流程自動化，讓非程式人員也能輕鬆建立自動化工作流。",
+   "audience": "需要流程自動化與 AI 服務整合的企業與開發者",
+   "use_cases": [
+    {
+     "title": "企業流程自動化",
+     "how": "整合企業內部系統，自動處理資料輸入、報表生成與跨部門協作。"
+    },
+    {
+     "title": "SaaS 產品嵌入 AI",
+     "how": "將 ByteChef 嵌入至 SaaS 產品，為用戶提供 AI 驅動的自動化功能。"
+    },
+    {
+     "title": "API 整合服務",
+     "how": "提供 API 供第三方應用連接，實現跨平台的自動化流程與數據交換。"
+    }
+   ],
+   "mermaid": "flowchart LR\n  n0[\"流程編輯器\"]\n  n1[\"AI 代理人\"]\n  n2[\"資料庫\"]\n  n3[\"LLM 服務\"]\n  n4[\"API 網關\"]\n  n5[\"用戶界面\"]\n  n6[\"安全管理\"]\n  n7[\"記憶存儲\"]\n  n8[\"守則系統\"]\n  n9[\"AI 助手\"]\n  n0 -->|發送流程| n1\n  n1 -->|調用模型| n3\n  n3 -->|返回結果| n1\n  n1 -->|存儲數據| n2\n  n2 -->|讀取記憶| n7\n  n7 -->|提供記憶| n1\n  n8 -->|執行守則| n1\n  n9 -->|生成流程| n0\n  n5 -->|用戶請求| n4\n  n4 -->|驗證請求| n6\n  n6 -->|授權結果| n4",
+   "analyzed_at": 1793918320.9988616
+  },
+  {
+   "full_name": "anil-matcha/open-generative-ai",
+   "html_url": "https://github.com/Anil-matcha/Open-Generative-AI",
+   "description": "Unrestricted Open-source alternative to AI video platforms — Free AI image & video generation studio with 600+ models (Flux, Midjourney, Kling, Sora, Veo). No content filters. Self-hosted, MIT licensed.",
+   "stars": 32469,
+   "license": "MIT",
+   "language": "JavaScript",
+   "topics": [
+    "ai-art-generator",
+    "ai-image-generation",
+    "ai-video-generation",
+    "fal-ai-alternative",
+    "generative-ai",
+    "image-to-video",
+    "invideo-alternative",
+    "kling-ai",
+    "lipsync",
+    "litellm-alternative",
+    "midjourney-alternative",
+    "muapi",
+    "open-source",
+    "openrouter-alternative",
+    "seedance2",
+    "sora-alternative",
+    "text-to-image",
+    "text-to-video",
+    "uncensored",
+    "wan-video"
+   ],
+   "summary": "免費開放源碼的AI影像與影片生成工具，無內容限制，可自建伺服器使用。",
+   "audience": "想自建AI影像/影片生成平台的創業者與開發者",
+   "use_cases": [
+    {
+     "title": "自建AI影像生成服務",
+     "how": "透過MuAPI白標方案，建立自有品牌的AI影像生成平台，收取訂閱費"
+    },
+    {
+     "title": "AI影片製作工具出租",
+     "how": "提供企業或創作者使用AI影片生成功能，按使用量收費"
+    },
+    {
+     "title": "無審查內容生成平台",
+     "how": "建立無內容限制的AI創作空間，吸引特定社群或創作者使用"
+    }
+   ],
+   "mermaid": "flowchart LR\n  n0[\"前端界面\"]\n  n1[\"MuAPI\"]\n  n2[\"模型儲存庫\"]\n  n3[\"生成服務\"]\n  n4[\"計費系統\"]\n  n5[\"用戶管理\"]\n  n6[\"任務隊列\"]\n  n7[\"儲存服務\"]\n  n8[\"通知服務\"]\n  n9[\"分析面板\"]\n  n0 -->|請求| n1\n  n1 -->|取模型| n2\n  n1 -->|生成任務| n3\n  n3 -->|儲存結果| n7\n  n3 -->|任務排隊| n6\n  n6 -->|處理任務| n3\n  n3 -->|計費| n4\n  n5 -->|用戶資料| n4\n  n3 -->|通知用戶| n8\n  n9 -->|分析數據| n3",
+   "analyzed_at": 1793904849.6742327
+  },
+  {
+   "full_name": "microsoft/playwright",
+   "html_url": "https://github.com/microsoft/playwright",
+   "description": "Playwright is a framework for Web Testing and Automation. It allows testing Chromium, Firefox and WebKit with a single API. ",
+   "stars": 99228,
+   "license": "Apache-2.0",
+   "language": "TypeScript",
+   "topics": [
+    "automation",
+    "chrome",
+    "chromium",
+    "e2e-testing",
+    "electron",
+    "end-to-end-testing",
+    "firefox",
+    "javascript",
+    "playwright",
+    "test",
+    "test-automation",
+    "testing",
+    "testing-tools",
+    "web",
+    "webkit"
+   ],
+   "summary": "自動化瀏覽器操作，支援多瀏覽器測試與網頁互動",
+   "audience": "網頁開發者、測試工程師、AI 代理開發者",
+   "use_cases": [
+    {
+     "title": "網站端到端測試",
+     "how": "用 Playwright 寫測試腳本，驗證網頁功能與流程正確性"
+    },
+    {
+     "title": "AI 代理操作網頁",
+     "how": "透過 MCP 协議讓 AI 代理執行網頁點擊、輸入等操作"
+    },
+    {
+     "title": "網頁螢幕截圖與 PDF 產生",
+     "how": "用 Playwright 庫直接控制瀏覽器生成螢幕截圖或 PDF 文件"
+    }
+   ],
+   "mermaid": "flowchart LR\n  n0[\"瀏覽器\"]\n  n1[\"API\"]\n  n2[\"測試執行器\"]\n  n3[\"命令列\"]\n  n4[\"MCP 服務器\"]\n  n5[\"AI 代理\"]\n  n6[\"儲存\"]\n  n7[\"網路\"]\n  n8[\"追蹤視圖\"]\n  n9[\"報告器\"]\n  n1 -->|控制| n0\n  n2 -->|執行| n0\n  n3 -->|指令| n0\n  n4 -->|協議| n5\n  n0 -->|儲存| n6\n  n0 -->|網路| n7\n  n0 -->|追蹤| n8\n  n0 -->|報告| n9",
+   "analyzed_at": 1793775290.3930697
+  },
+  {
+   "full_name": "puppeteer/puppeteer",
+   "html_url": "https://github.com/puppeteer/puppeteer",
+   "description": "JavaScript API for Chrome and Firefox",
+   "stars": 95792,
+   "license": "Apache-2.0",
+   "language": "TypeScript",
+   "topics": [
+    "automation",
+    "chrome",
+    "chromium",
+    "developer-tools",
+    "firefox",
+    "headless-chrome",
+    "node-module",
+    "testing",
+    "web"
+   ],
+   "summary": "用程式控制瀏覽器自動操作網頁，如點擊、輸入、抓取資料。",
+   "audience": "需要自動化瀏覽器操作的開發者與測試工程師",
+   "use_cases": [
+    {
+     "title": "網站自動測試",
+     "how": "用 Puppeteer 寫測試腳本，模擬使用者操作驗證網頁功能。"
+    },
+    {
+     "title": "資料抓取與分析",
+     "how": "自動打開網頁抓取資料，並儲存至資料庫進行分析。"
+    },
+    {
+     "title": "網頁自動化任務",
+     "how": "設定腳本自動執行重複性網頁操作，如填表、登入、下單等。"
+    }
+   ],
+   "mermaid": "flowchart LR\n  n0[\"瀏覽器\"]\n  n1[\"DevTools 協議\"]\n  n2[\"Puppeteer\"]\n  n3[\"Node.js\"]\n  n4[\"Chrome\"]\n  n5[\"Firefox\"]\n  n6[\"無頭模式\"]\n  n7[\"API\"]\n  n8[\"腳本\"]\n  n9[\"瀏覽器自動化\"]\n  n2 -->|使用| n1\n  n2 -->|控制| n0\n  n3 -->|執行| n2\n  n2 -->|連接| n4\n  n2 -->|連接| n5\n  n2 -->|啟動| n6\n  n2 -->|提供| n7\n  n8 -->|調用| n2\n  n2 -->|實現| n9",
+   "analyzed_at": 1793775279.4029932
+  },
+  {
+   "full_name": "h4ckf0r0day/obscura",
+   "html_url": "https://github.com/h4ckf0r0day/obscura",
+   "description": "The headless browser for AI agents and web scraping",
+   "stars": 30312,
+   "license": "Apache-2.0",
+   "language": "Rust",
+   "topics": [
+    "antidetect",
+    "antidetect-browser",
+    "browser",
+    "browser-automation",
+    "cdp",
+    "headless",
+    "playwright",
+    "puppeteer",
+    "rust"
+   ],
+   "summary": "Obscura 是一個無頭瀏覽器，能自動操作網頁、抓取資料，還能生成螢幕截圖與 PDF。",
+   "audience": "需要網頁自動化、資料抓取、AI 代理工具的開發者與企業",
+   "use_cases": [
+    {
+     "title": "網頁資料抓取服務",
+     "how": "提供 API 給客戶抓取特定網站資料，按次計費或訂閱模式收費"
+    },
+    {
+     "title": "AI 代理工具整合",
+     "how": "與 AI 代理工具結合，讓 AI 能模擬人類操作網頁進行任務自動化"
+    },
+    {
+     "title": "螢幕截圖與 PDF 生成",
+     "how": "為企業提供網頁螢幕截圖與 PDF 生成服務，用於報告或存檔用途"
+    }
+   ],
+   "mermaid": "flowchart LR\n  n0[\"引擎\"]\n  n1[\"V8 引擎\"]\n  n2[\"CDP 協議\"]\n  n3[\"瀏覽器模擬\"]\n  n4[\"螢幕截圖\"]\n  n5[\"PDF 生成\"]\n  n6[\"資料抓取\"]\n  n7[\"API 服務\"]\n  n8[\"使用者端\"]\n  n9[\"雲端服務\"]\n  n0 -->|執行 JS| n1\n  n0 -->|支援 CDP| n2\n  n0 -->|模擬瀏覽器| n3\n  n3 -->|生成截圖| n4\n  n3 -->|生成 PDF| n5\n  n3 -->|抓取資料| n6\n  n6 -->|提供 API| n7\n  n7 -->|供使用者使用| n8\n  n0 -->|支援雲端| n9",
+   "analyzed_at": 1793775268.4868288
+  },
+  {
+   "full_name": "greensock/gsap",
+   "html_url": "https://github.com/greensock/GSAP",
+   "description": "GSAP (GreenSock Animation Platform), a JavaScript animation library for the modern web",
+   "stars": 30138,
+   "license": "",
+   "language": "JavaScript",
+   "topics": [
+    "animation",
+    "gsap",
+    "javascript",
+    "javascript-library",
+    "scroll"
+   ],
+   "summary": "用 JavaScript 動畫化網頁上的任何元素，如 CSS、SVG、React 等，讓網頁動起來。",
+   "audience": "網頁開發者、UI/UX 設計師、動畫創作者",
+   "use_cases": [
+    {
+     "title": "網站滾動動畫",
+     "how": "透過 ScrollTrigger 產生視覺效果，如元件淡入、移動或變形，提升使用者體驗。"
+    },
+    {
+     "title": "互動式 UI 設計",
+     "how": "用 GSAP 動畫化按鈕、導覽列或圖標，增加網站的互動性和吸引力。"
+    },
+    {
+     "title": "商業網站動畫",
+     "how": "為品牌網站加入高品質動畫，提升品牌形象與使用者參與度，增加轉化率。"
+    }
+   ],
+   "mermaid": "flowchart LR\n  n0[\"GSAP 核心\"]\n  n1[\"ScrollTrigger\"]\n  n2[\"MorphSVGPlugin\"]\n  n3[\"SplitText\"]\n  n4[\"Draggable\"]\n  n5[\"Flip\"]\n  n6[\"Observer\"]\n  n7[\"瀏覽器\"]\n  n8[\"使用者\"]\n  n9[\"動畫效果\"]\n  n0 -->|調用| n1\n  n0 -->|調用| n2\n  n0 -->|調用| n3\n  n0 -->|調用| n4\n  n0 -->|調用| n5\n  n0 -->|調用| n6\n  n1 -->|觸發| n7\n  n1 -->|回應| n8\n  n2 -->|產生| n9\n  n3 -->|產生| n9\n  n4 -->|產生| n9\n  n5 -->|產生| n9\n  n6 -->|產生| n9",
+   "analyzed_at": 1793775222.241249
+  },
+  {
+   "full_name": "heygen-com/hyperframes",
+   "html_url": "https://github.com/heygen-com/hyperframes",
+   "description": "Write HTML. Render video. Built for agents.",
+   "stars": 78503,
+   "license": "Apache-2.0",
+   "language": "TypeScript",
+   "topics": [
+    "ai",
+    "ai-agents",
+    "animation",
+    "claude-code",
+    "ffmpeg",
+    "framework",
+    "gsap",
+    "html",
+    "html-to-video",
+    "mcp",
+    "motion-graphics",
+    "puppeteer",
+    "rendering",
+    "typescript",
+    "video-editor"
+   ],
+   "summary": "用 HTML 設計動畫，自動轉成 MP4 影片，專為 AI 編程代理設計。",
+   "audience": "AI 編程代理開發者、動畫設計師、視頻製作人",
+   "use_cases": [
+    {
+     "title": "AI 代理生成產品介紹影片",
+     "how": "AI 編程代理撰寫 HTML 動畫，HyperFrames 轉成 MP4，用於電商產品展示"
+    },
+    {
+     "title": "自動化生成動態數據視覺化影片",
+     "how": "AI 代理生成 HTML 圖表動畫，HyperFrames 轉成影片，用於報告與分析"
+    },
+    {
+     "title": "客戶定制動畫廣告製作",
+     "how": "設計師用 HTML 創作動畫，HyperFrames 轉成影片，供客戶預覽與下載"
+    }
+   ],
+   "mermaid": "flowchart LR\n  n0[\"HTML 編輯器\"]\n  n1[\"動畫引擎\"]\n  n2[\"媒體管理\"]\n  n3[\"FFmpeg 渲染器\"]\n  n4[\"CLI 界面\"]\n  n5[\"AI 代理\"]\n  n6[\"影片輸出\"]\n  n7[\"預覽播放器\"]\n  n8[\"技能註冊\"]\n  n9[\"插件管理\"]\n  n5 -->|調用技能| n8\n  n8 -->|提供工具| n0\n  n0 -->|生成動畫| n1\n  n1 -->|整合媒體| n2\n  n2 -->|傳遞資料| n3\n  n3 -->|生成影片| n6\n  n3 -->|預覽影片| n7\n  n4 -->|控制渲染| n3\n  n9 -->|管理插件| n8",
+   "analyzed_at": 1793775208.884035
+  },
+  {
+   "full_name": "remotion-dev/remotion",
+   "html_url": "https://github.com/remotion-dev/remotion",
+   "description": "🎥      Make videos programmatically with React",
+   "stars": 70534,
+   "license": "其他",
+   "language": "TypeScript",
+   "topics": [
+    "javascript",
+    "react",
+    "video"
+   ],
+   "summary": "用 React 編程製作影片，輕鬆生成動畫與視頻內容。",
+   "audience": "需要自動化生成影片的開發者與設計師",
+   "use_cases": [
+    {
+     "title": "廣告影片批量製作",
+     "how": "透過 React 編程生成多種廣告版本，自動渲染至雲端伺服器。"
+    },
+    {
+     "title": "企業影片庫建置",
+     "how": "建立可重複使用的動畫元件，快速組合出企業宣傳影片。"
+    },
+    {
+     "title": "線上視頻編輯工具",
+     "how": "開發基於 Remotion 的視頻編輯平台，提供訂閱制服務。"
+    }
+   ],
+   "mermaid": "flowchart LR\n  n0[\"React\"]\n  n1[\"Remotion\"]\n  n2[\"Node.js\"]\n  n3[\"雲端伺服器\"]\n  n4[\"渲染引擎\"]\n  n5[\"儲存系統\"]\n  n6[\"播放器\"]\n  n7[\"編輯器\"]\n  n8[\"AI 生成\"]\n  n9[\"資料庫\"]\n  n0 -->|使用| n1\n  n1 -->|整合| n2\n  n2 -->|調用| n4\n  n4 -->|儲存| n5\n  n5 -->|讀取| n6\n  n6 -->|顯示| n7\n  n8 -->|生成| n1\n  n9 -->|資料| n7",
+   "analyzed_at": 1793775196.6199057
+  },
+  {
+   "full_name": "0xs4n4tg/kinetograph",
+   "html_url": "https://github.com/0xS4N4TG/kinetograph",
+   "description": "A blazingly fast programmatic video engine, made for agents.",
+   "stars": 452,
+   "license": "其他",
+   "language": "TypeScript",
+   "topics": [
+    "agents",
+    "ai-agents",
+    "ffmpeg",
+    "gpu",
+    "hyperframes",
+    "mcp",
+    "motion-graphics",
+    "programmatic-video",
+    "react",
+    "remotion",
+    "rust",
+    "skia",
+    "typescript",
+    "video",
+    "video-rendering",
+    "wgpu"
+   ],
+   "summary": "用程式碼生成影片，不需瀏覽器，超快又靈活。",
+   "audience": "需要自動化生成影片的開發者與 AI 代理",
+   "use_cases": [
+    {
+     "title": "AI 代理自動生成宣傳影片",
+     "how": "AI 代理用 TypeScript 編寫腳本，Kinetograph 生成影片，用於市場推廣。"
+    },
+    {
+     "title": "企業用於內部培訓影片製作",
+     "how": "企業用 Kinetograph 生成內部培訓影片，節省人力與時間成本。"
+    },
+    {
+     "title": "遊戲開發者製作過場動畫",
+     "how": "遊戲開發者用 Kinetograph 生成遊戲過場動畫，提升視覺效果與效率。"
+    }
+   ],
+   "mermaid": "flowchart LR\n  n0[\"Node.js\"]\n  n1[\"Rust\"]\n  n2[\"GPU\"]\n  n3[\"Remotion\"]\n  n4[\"HyperFrames\"]\n  n5[\"FFmpeg\"]\n  n6[\"WebGL\"]\n  n7[\"Web Audio\"]\n  n8[\"Canvas\"]\n  n9[\"Output\"]\n  n0 -->|執行腳本| n1\n  n1 -->|繪製幀| n2\n  n0 -->|載入專案| n3\n  n0 -->|載入專案| n4\n  n2 -->|編碼影片| n5\n  n6 -->|渲染圖形| n2\n  n7 -->|混音| n5\n  n8 -->|渲染畫布| n2\n  n2 -->|輸出 MP4| n9",
+   "analyzed_at": 1793775186.9550643
+  },
+  {
+   "full_name": "kodezi/chronos",
+   "html_url": "https://github.com/Kodezi/Chronos",
+   "description": "Kodezi Chronos is a debugging-first language model that achieves state-of-the-art results on SWE-bench Lite (80.33%) and 67% real-world fix accuracy, over six times better than GPT-4. Built with Adaptive Graph-Guided Retrieval and Persistent Debug Memory. Model available Q1 2026 via Kodezi OS.",
+   "stars": 4964,
+   "license": "其他",
+   "language": "Java",
+   "topics": [
+    "artificial-intelligence",
+    "autonomous-debugging",
+    "benchmark",
+    "benchmark-report",
+    "bug-fixing",
+    "chronos",
+    "code",
+    "code-analysis",
+    "code-analysis-tool",
+    "code-debugger",
+    "code-understanding",
+    "debugging",
+    "developer-tools",
+    "kodezi",
+    "language-model",
+    "machine-learning",
+    "program-repair",
+    "software-engineering"
+   ],
+   "summary": "Kodezi Chronos 是一個專為除錯設計的語言模型，能快速找出並修復程式碼問題。",
+   "audience": "軟體工程師、開發團隊與企業技術部門",
+   "use_cases": [
+    {
+     "title": "自動化除錯服務",
+     "how": "企業將 Chronos 整合至 CI/CD 系統，自動偵測與修復程式碼錯誤，提升開發效率。"
+    },
+    {
+     "title": "軟體維護成本降低",
+     "how": "透過 Chronos 進行程式碼分析與除錯，減少人工修復時間與錯誤率，降低長期維護成本。"
+    },
+    {
+     "title": "開發工具整合",
+     "how": "將 Chronos 整合至 IDE 或開發平台，提供即時除錯建議與自動修復功能，提升開發者生產力。"
+    }
+   ],
+   "mermaid": "flowchart LR\n  n0[\"Debugging-First Model\"]\n  n1[\"Adaptive Graph-Guided Retrieva\"]\n  n2[\"Persistent Debug Memory\"]\n  n3[\"Code Analysis Engine\"]\n  n4[\"Repository Context\"]\n  n5[\"Root Cause Detection\"]\n  n6[\"Patch Generation\"]\n  n7[\"Feedback Loop\"]\n  n8[\"Model Training\"]\n  n9[\"Evaluation Metrics\"]\n  n0 -->|接收| n1\n  n1 -->|傳遞| n2\n  n2 -->|供應| n3\n  n3 -->|分析| n4\n  n4 -->|輸入| n5\n  n5 -->|輸出| n6\n  n6 -->|反饋| n7\n  n7 -->|更新| n8\n  n8 -->|評估| n9",
+   "analyzed_at": 1793775142.6803064
+  },
+  {
+   "full_name": "sakanaai/ai-scientist",
+   "html_url": "https://github.com/SakanaAI/AI-Scientist",
+   "description": "The AI Scientist: Towards Fully Automated Open-Ended Scientific Discovery 🧑‍🔬",
+   "stars": 14939,
+   "license": "其他",
+   "language": "Jupyter Notebook",
+   "topics": [],
+   "summary": "AI 自動進行科學研究與發明新知識",
+   "audience": "AI 研究者與科學家",
+   "use_cases": [
+    {
+     "title": "生成科學論文",
+     "how": "AI 產生新研究主題並撰寫完整論文，供學術發表"
+    },
+    {
+     "title": "自動化實驗設計",
+     "how": "AI 產生實驗計畫與程式碼，加速科學研究流程"
+    },
+    {
+     "title": "跨領域知識整合",
+     "how": "AI 結合不同學科知識，產生創新科學假設與理論"
+    }
+   ],
+   "mermaid": "flowchart LR\n  n0[\"大語言模型\"]\n  n1[\"研究模板\"]\n  n2[\"程式碼生成\"]\n  n3[\"實驗執行\"]\n  n4[\"資料庫\"]\n  n5[\"論文評審\"]\n  n6[\"研究成果\"]\n  n0 -->|讀取模板| n1\n  n0 -->|生成程式碼| n2\n  n2 -->|執行實驗| n3\n  n3 -->|儲存資料| n4\n  n0 -->|生成評審| n5\n  n5 -->|輸出結果| n6",
+   "analyzed_at": 1793775099.7305272
+  },
+  {
+   "full_name": "sakanaai/ai-scientist-v3",
+   "html_url": "https://github.com/SakanaAI/AI-Scientist-v3",
+   "description": "The Agentic Scientist: Orchestrating Coding Agents for Automated Scientific (Co-)Discovery",
+   "stars": 622,
+   "license": "Apache-2.0",
+   "language": "Python",
+   "topics": [],
+   "summary": "自動化科學研究，從任務描述生成實驗、分析與論文",
+   "audience": "需要自動化科學研究的AI工程師與研究者",
+   "use_cases": [
+    {
+     "title": "科學研究自動化",
+     "how": "輸入研究目標，系統自動生成實驗設計、執行分析與撰寫論文"
+    },
+    {
+     "title": "學術論文生成",
+     "how": "透過AI代理執行實驗與分析，自動產生可發表的學術論文"
+    },
+    {
+     "title": "產品開發加速",
+     "how": "利用AI代理進行多輪實驗與優化，縮短產品開發週期"
+    }
+   ],
+   "mermaid": "flowchart LR\n  n0[\"任務規劃\"]\n  n1[\"探索分析\"]\n  n2[\"基準測試\"]\n  n3[\"最終評估\"]\n  n4[\"後設分析\"]\n  n5[\"論文生成\"]\n  n6[\"容器執行\"]\n  n7[\"API通訊\"]\n  n8[\"結果儲存\"]\n  n0 -->|輸出任務| n1\n  n1 -->|傳遞結果| n2\n  n2 -->|傳送數據| n3\n  n3 -->|提供資料| n4\n  n4 -->|輸出分析| n5\n  n6 -->|API連線| n7\n  n7 -->|儲存結果| n8",
+   "analyzed_at": 1793775091.542753
+  },
+  {
+   "full_name": "jenshor/open-peeps",
+   "html_url": "https://github.com/jenshor/open-peeps",
+   "description": "",
+   "stars": 27,
+   "license": "MIT",
+   "language": "Dart",
+   "topics": [],
+   "summary": "用於Flutter的頭像生成工具，可快速建立獨特的Peep形象。",
+   "audience": "Flutter開發者與需要頭像定制功能的應用程式",
+   "use_cases": [
+    {
+     "title": "用戶頭像定制服務",
+     "how": "提供PeepStudio讓用戶自訂頭像，並儲存為int格式以節省空間。"
+    },
+    {
+     "title": "應用內角色形象生成",
+     "how": "在遊戲或社交應用中，用PeepAvatar生成角色形象並保持一致性。"
+    },
+    {
+     "title": "頭像數據存儲與分享",
+     "how": "將頭像序列化為int存儲於伺服器，並透過API分享給其他用戶。"
+    }
+   ],
+   "mermaid": "flowchart LR\n  n0[\"Peep\"]\n  n1[\"PeepAtom\"]\n  n2[\"Head\"]\n  n3[\"Face\"]\n  n4[\"FacialHair\"]\n  n5[\"Accessories\"]\n  n6[\"Body\"]\n  n7[\"Pose\"]\n  n8[\"PeepAvatar\"]\n  n9[\"PeepStudio\"]\n  n0 -->|渲染| n8\n  n0 -->|顯示| n9\n  n1 -->|組成| n0\n  n2 -->|子類| n1\n  n3 -->|子類| n1\n  n4 -->|子類| n1\n  n5 -->|子類| n1\n  n6 -->|子類| n1\n  n7 -->|子類| n1",
+   "analyzed_at": 1793775026.0972705
+  },
+  {
+   "full_name": "666ghj/mirofish",
+   "html_url": "https://github.com/666ghj/MiroFish",
+   "description": "A Simple and Universal Swarm Intelligence Engine, Predicting Anything. 简洁通用的群体智能引擎，预测万物",
+   "stars": 83832,
+   "license": "AGPL-3.0",
+   "language": "Python",
+   "topics": [
+    "agent-memory",
+    "financial-forecasting",
+    "future-prediction",
+    "knowledge-graph",
+    "llms",
+    "multi-agent-simulation",
+    "public-opinion-analysis",
+    "python3",
+    "social-prediction",
+    "swarm-intelligence"
+   ],
+   "summary": "透過群體智慧模擬，預測未來趨勢與事件發展。",
+   "audience": "企業決策者、研究機構、創作者與內容製作者",
+   "use_cases": [
+    {
+     "title": "金融市場預測與風險評估",
+     "how": "輸入財經數據與政策動態，模擬市場反應與投資趨勢。"
+    },
+    {
+     "title": "公共意見分析與趨勢預測",
+     "how": "分析社交媒體與新聞，預測社會風向與事件發展。"
+    },
+    {
+     "title": "小說結局推演與創意探索",
+     "how": "輸入小說內容，模擬角色互動與故事走向，生成新結局。"
+    }
+   ],
+   "mermaid": "flowchart LR\n  n0[\"資料萃取\"]\n  n1[\"圖形RAG\"]\n  n2[\"代理配置\"]\n  n3[\"模擬引擎\"]\n  n4[\"報告代理\"]\n  n5[\"LLM整合\"]\n  n6[\"用戶界面\"]\n  n7[\"時間記憶\"]\n  n8[\"Zep雲端\"]\n  n9[\"API閘道\"]\n  n0 -->|資料輸入| n1\n  n1 -->|圖形注入| n2\n  n2 -->|配置傳遞| n3\n  n3 -->|記憶更新| n7\n  n3 -->|結果傳輸| n4\n  n5 -->|模型支援| n3\n  n8 -->|記憶存儲| n3\n  n9 -->|用戶訪問| n6\n  n6 -->|指令傳輸| n3\n  n4 -->|報告展示| n6",
+   "analyzed_at": 1793775007.458951
+  },
+  {
+   "full_name": "microsoft/tokeneconomizer",
+   "html_url": "https://github.com/microsoft/TokenEconomizer",
+   "description": "Experience-Driven Black-Box Cost Control for Coding Agents",
+   "stars": 1741,
+   "license": "Apache-2.0",
+   "language": "Python",
+   "topics": [],
+   "summary": "讓程式碼助手在常見專案中更省錢，不需修改助手本身。",
+   "audience": "使用程式碼助手的開發者與企業團隊",
+   "use_cases": [
+    {
+     "title": "降低開發成本",
+     "how": "透過學習專案經驗，減少重複的模型呼叫與工具載入，降低總體運算費用。"
+    },
+    {
+     "title": "提高任務成功率",
+     "how": "透過循環監測與重導，避免助手陷入無效重複，提升任務完成率與效率。"
+    },
+    {
+     "title": "優化工具使用",
+     "how": "自動過濾未使用的工具，減少不必要的資源消耗，提升專案執行效能。"
+    }
+   ],
+   "mermaid": "flowchart LR\n  n0[\"會話紀錄\"]\n  n1[\"微技能\"]\n  n2[\"工具修剪\"]\n  n3[\"循環監測\"]\n  n4[\"事實建議\"]\n  n5[\"判斷模型\"]\n  n6[\"程式碼助手\"]\n  n7[\"費用追蹤\"]\n  n8[\"專案資料庫\"]\n  n9[\"使用者介面\"]\n  n0 -->|傳遞會話資料| n1\n  n0 -->|傳遞會話資料| n2\n  n0 -->|傳遞會話資料| n3\n  n1 -->|提出事實| n4\n  n2 -->|過濾工具| n6\n  n3 -->|判斷循環| n5\n  n4 -->|提供事實| n6\n  n5 -->|提供建議| n6\n  n8 -->|追蹤費用| n7\n  n7 -->|顯示費用| n9",
+   "analyzed_at": 1793388837.931979
+  },
+  {
+   "full_name": "storytold/pdfcraft",
+   "html_url": "https://github.com/storytold/pdfcraft",
+   "description": "PdfCraft: An open-source PDF reader and editor written by scratch in pure Rust",
+   "stars": 18681,
+   "license": "Apache-2.0",
+   "language": "Rust",
+   "topics": [
+    "document-processing",
+    "documents",
+    "pdf",
+    "pdf-generation",
+    "pdf-processing",
+    "pdf-tools",
+    "pdf-viewer",
+    "rust"
+   ],
+   "summary": "PdfCraft 是一款用 Rust 編寫的開源 PDF 閲讀與編輯工具，支援多平台使用。",
+   "audience": "需要處理 PDF 文件的設計師、開發者與企業用戶",
+   "use_cases": [
+    {
+     "title": "PDF 文件管理服務",
+     "how": "提供 PDF 合併、分割、加密等服務，收取訂閱費用"
+    },
+    {
+     "title": "線上 PDF 編輯工具",
+     "how": "建立網頁版 PDF 編輯器，提供付費進階功能與模板"
+    },
+    {
+     "title": "企業內部文件處理",
+     "how": "為企業提供內部 PDF 編輯與管理系統，收取定制費用"
+    }
+   ],
+   "mermaid": "flowchart LR\n  n0[\"PDF 閲讀器\"]\n  n1[\"PDF 編輯器\"]\n  n2[\"文件管理\"]\n  n3[\"用戶界面\"]\n  n4[\"數據處理\"]\n  n5[\"安全模組\"]\n  n6[\"平台支援\"]\n  n7[\"雲端整合\"]\n  n8[\"數據追蹤\"]\n  n9[\"社群支援\"]\n  n0 -->|顯示| n3\n  n1 -->|處理| n4\n  n2 -->|加密| n5\n  n3 -->|適配| n6\n  n4 -->|同步| n7\n  n8 -->|回饋| n9",
+   "analyzed_at": 1793344961.5309877
+  },
+  {
+   "full_name": "knifelemon/filee",
+   "html_url": "https://github.com/KnifeLemon/Filee",
+   "description": "Free, open-source file converter. Convert 263 formats offline by drag & drop — images, PDF, Word, Excel, PowerPoint, HWP/HWPX, video, audio, e-books and archives. No upload, no Office needed.",
+   "stars": 17063,
+   "license": "MIT",
+   "language": "C#",
+   "topics": [
+    "audio-converter",
+    "avalonia",
+    "batch-conversion",
+    "converter",
+    "csharp",
+    "document-converter",
+    "docx-to-pdf",
+    "dotnet",
+    "drag-and-drop",
+    "file-conversion",
+    "file-converter",
+    "heic-converter",
+    "hwp",
+    "hwpx",
+    "image-converter",
+    "linux",
+    "macos",
+    "pdf-converter",
+    "video-converter",
+    "windows"
+   ],
+   "summary": "拖曳檔案即可轉換格式，無需上傳或安裝Office。",
+   "audience": "需要批量轉檔、離線處理的個人與企業用戶",
+   "use_cases": [
+    {
+     "title": "企業文件轉換服務",
+     "how": "提供內部轉檔工具，員工可離線轉換文件，節省上傳與儲存成本"
+    },
+    {
+     "title": "圖書館數位化計畫",
+     "how": "將紙本文件掃描後轉換為PDF或EPUB，供線上閱覽與下載"
+    },
+    {
+     "title": "跨平台文件協作",
+     "how": "團隊成員可透過不同作業系統離線轉換文件，確保格式一致性"
+    }
+   ],
+   "mermaid": "flowchart LR\n  n0[\"使用者介面\"]\n  n1[\"拖曳處理\"]\n  n2[\"格式選單\"]\n  n3[\"轉換引擎\"]\n  n4[\"檔案儲存\"]\n  n5[\"設定管理\"]\n  n6[\"命令列工具\"]\n  n7[\"更新管理\"]\n  n8[\"主題管理\"]\n  n9[\"語言管理\"]\n  n1 -->|觸發選單| n2\n  n2 -->|選擇格式| n3\n  n3 -->|執行轉換| n4\n  n4 -->|顯示結果| n0\n  n0 -->|讀取設定| n5\n  n5 -->|傳遞參數| n3\n  n6 -->|接收指令| n3\n  n7 -->|顯示更新| n0\n  n8 -->|套用主題| n0\n  n9 -->|語言切換| n0",
+   "analyzed_at": 1793274236.8452504
+  },
+  {
+   "full_name": "jd-opensource/joyai-image",
+   "html_url": "https://github.com/jd-opensource/JoyAI-Image",
+   "description": "JoyAI-Image is the unified multimodal foundation model for image understanding, text-to-image generation, and instruction-guided image editing.",
+   "stars": 2231,
+   "license": "Apache-2.0",
+   "language": "Python",
+   "topics": [],
+   "summary": "JoyAI-Image 是一個能理解圖片、生成圖片、並根據指令編輯圖片的 AI 模型。",
+   "audience": "圖像生成與編輯的開發者與創作者",
+   "use_cases": [
+    {
+     "title": "圖像編輯服務",
+     "how": "提供 API 編輯圖片，如修圖、改構圖、添加文字等，收取服務費。"
+    },
+    {
+     "title": "內容創作工具",
+     "how": "整合至設計軟體，讓設計師快速生成與修改圖像，提升生產效率。"
+    },
+    {
+     "title": "廣告與行銷應用",
+     "how": "根據品牌指令自動生成廣告圖像，降低設計成本與時間。"
+    }
+   ],
+   "mermaid": "flowchart LR\n  n0[\"Input\"]\n  n1[\"MLLM\"]\n  n2[\"MMDiT\"]\n  n3[\"Processing\"]\n  n4[\"Output\"]\n  n0 -->|傳入| n1\n  n1 -->|解析| n2\n  n2 -->|生成| n3\n  n3 -->|輸出| n4",
+   "analyzed_at": 1793271569.9101028
+  },
+  {
+   "full_name": "shinshin86/mesh-avatar-studio",
+   "html_url": "https://github.com/shinshin86/mesh-avatar-studio",
+   "description": "Turn one illustration into an animated 2D mesh avatar with a coding agent and a local editor",
+   "stars": 1466,
+   "license": "MIT",
+   "language": "TypeScript",
+   "topics": [
+    "2d-animation",
+    "avatar",
+    "claude-code",
+    "codex",
+    "mesh-deformation",
+    "vtuber",
+    "webgl"
+   ],
+   "summary": "將一張插畫轉換成會眨眼、說話、轉頭的動畫2D網格頭像。",
+   "audience": "2D動畫創作者、VTuber、虛擬角色設計師",
+   "use_cases": [
+    {
+     "title": "VTuber角色製作",
+     "how": "使用AI生成角色骨架與動作，搭配本地編輯器調整細節，輸出動畫角色"
+    },
+    {
+     "title": "虛擬主播形象設計",
+     "how": "透過AI生成頭像與表情，配合語音同步功能，打造互動式虛擬主播形象"
+    },
+    {
+     "title": "動畫插畫商業化",
+     "how": "將靜態插畫轉為動態角色，用於廣告、遊戲或線上直播，提升內容價值"
+    }
+   ],
+   "mermaid": "flowchart LR\n  n0[\"圖片輸入\"]\n  n1[\"AI編碼代理\"]\n  n2[\"本地編輯器\"]\n  n3[\"網格生成器\"]\n  n4[\"層次建構\"]\n  n5[\"預覽顯示\"]\n  n6[\"表情編輯\"]\n  n7[\"動作控制\"]\n  n8[\"輸出導出\"]\n  n9[\"即時串流\"]\n  n0 -->|圖片傳輸| n1\n  n1 -->|生成指令| n3\n  n3 -->|層次資料| n4\n  n4 -->|預覽資料| n5\n  n2 -->|編輯資料| n4\n  n6 -->|表情資料| n5\n  n7 -->|動作資料| n5\n  n5 -->|輸出資料| n8\n  n8 -->|串流資料| n9",
+   "analyzed_at": 1793244369.7163684
+  },
+  {
+   "full_name": "jakeschincariol/day-trader-skill",
+   "html_url": "https://github.com/Jakeschincariol/day-trader-skill",
+   "description": "11 Claude skills for day trading: scan thousands of charts, track breaking news, time every entry and exit, and replay every outcome before you risk a dollar.",
+   "stars": 2586,
+   "license": "MIT",
+   "language": "Python",
+   "topics": [
+    "backtesting",
+    "claude",
+    "claude-skills",
+    "day-trading",
+    "stock-market"
+   ],
+   "summary": "協助日 trader 分析行情、追蹤新聞、計算進出场點與模擬交易結果，確保風險可控。",
+   "audience": "日 trader、量化交易者與金融分析師",
+   "use_cases": [
+    {
+     "title": "交易前風險評估",
+     "how": "透過模擬交易結果與歷史數據，計算風險與報酬比例，確保每筆交易符合個人風險承受能力。"
+    },
+    {
+     "title": "即時新聞監測",
+     "how": "追蹤上市公司的即時新聞與公告，分析對股價的影響，避免因資訊不對稱而損失。"
+    },
+    {
+     "title": "自動化交易規劃",
+     "how": "根據預設的技術分析與風險管理規則，生成交易計畫與訂單，並進行風險檢查與確認。"
+    }
+   ],
+   "mermaid": "flowchart LR\n  n0[\"圖表掃描器\"]\n  n1[\"新聞監測\"]\n  n2[\"進場時機分析\"]\n  n3[\"出場策略規劃\"]\n  n4[\"時間機器（模擬交易）\"]\n  n5[\"資金管理\"]\n  n6[\"風險管理\"]\n  n7[\"交易執行\"]\n  n8[\"價格警報\"]\n  n9[\"財務分析\"]\n  n10[\"國會交易監測\"]\n  n0 -->|傳遞標的| n1\n  n1 -->|傳遞新聞| n2\n  n2 -->|傳遞進場結果| n3\n  n3 -->|傳遞出場策略| n4\n  n4 -->|傳遞模擬結果| n5\n  n5 -->|傳遞資金配置| n6\n  n6 -->|傳遞風險檢查結果| n7\n  n7 -->|傳遞交易狀態| n8\n  n9 -->|傳遞財務資訊| n1\n  n10 -->|傳遞國會交易資訊| n1",
+   "analyzed_at": 1793215050.9737518
+  },
+  {
+   "full_name": "adamchainz/time-machine",
+   "html_url": "https://github.com/adamchainz/time-machine",
+   "description": "Travel through time in your tests.",
+   "stars": 1020,
+   "license": "MIT",
+   "language": "Python",
+   "topics": [
+    "python",
+    "testing",
+    "time"
+   ],
+   "summary": "在測試中模擬時間旅行，讓測試更精準。",
+   "audience": "測試工程師與開發者",
+   "use_cases": [
+    {
+     "title": "模擬不同時間點的系統行為",
+     "how": "在測試中設定特定時間，驗證系統在不同時間的反應是否正確。"
+    },
+    {
+     "title": "驗證時間依賴的邏輯正確性",
+     "how": "透過控制時間流，確保時間相關的邏輯在不同情境下都能正確執行。"
+    },
+    {
+     "title": "加速時間相關的測試執行",
+     "how": "避免真實時間流逝，讓測試在固定時間內完成，提高效率。"
+    }
+   ],
+   "mermaid": "flowchart LR\n  n0[\"TimeMachine\"]\n  n1[\"MockTime\"]\n  n2[\"TestCase\"]\n  n3[\"datetime\"]\n  n4[\"zoneinfo\"]\n  n5[\"ContextManager\"]\n  n6[\"Assertion\"]\n  n0 -->|提供| n1\n  n1 -->|注入| n2\n  n2 -->|使用| n3\n  n3 -->|載入| n4\n  n0 -->|控制| n5\n  n5 -->|觸發| n6",
+   "analyzed_at": 1793214982.1528466
+  },
+  {
+   "full_name": "ultrak18/windhover",
+   "html_url": "https://github.com/UltraK18/Windhover",
+   "description": "Fast, local-first image manager — search, tag, organize, and script your image library",
+   "stars": 4,
+   "license": "",
+   "language": "",
+   "topics": [],
+   "summary": "快速管理大量圖片，搜尋、標籤、整理與腳本化你的圖片庫。",
+   "audience": "需要高效管理圖片庫的創作者與設計師",
+   "use_cases": [
+    {
+     "title": "圖片庫搜尋與過濾",
+     "how": "透過標籤與關鍵字搜尋，快速找到特定圖片，並使用過濾條件篩選"
+    },
+    {
+     "title": "自動整理與分類",
+     "how": "設定標籤規則，讓圖片自動歸類至指定資料夾或收藏夾中"
+    },
+    {
+     "title": "整合外部工具與腳本",
+     "how": "透過腳本與快捷鍵，將圖片導出至 Photoshop 或其他工具進行編輯"
+    }
+   ],
+   "mermaid": "flowchart LR\n  n0[\"Rust後端\"]\n  n1[\"SQLite資料庫\"]\n  n2[\"Tauri前端\"]\n  n3[\"圖片資料夾\"]\n  n4[\"搜尋欄位\"]\n  n5[\"標籤雲\"]\n  n6[\"腳本執行器\"]\n  n7[\"系統通知\"]\n  n8[\"系統托盤\"]\n  n9[\"外部工具\"]\n  n0 -->|資料存取| n1\n  n2 -->|UI互動| n0\n  n3 -->|資料讀取| n0\n  n4 -->|搜尋請求| n1\n  n5 -->|標籤查詢| n1\n  n6 -->|腳本執行| n9\n  n7 -->|通知顯示| n2\n  n8 -->|最小化控制| n2",
+   "analyzed_at": 1793214604.1743367
+  },
+  {
+   "full_name": "marycache/imozuru",
+   "html_url": "https://github.com/MaryCache/imozuru",
+   "description": "知らない分野を、原文にたどりつくまで芋づる式に掘る Claude Code のスキル",
+   "stars": 1351,
+   "license": "MIT",
+   "language": "Python",
+   "topics": [],
+   "summary": "AI協助深入挖掘未知領域，從原文中提取知識，幫助用戶做出精準判斷。",
+   "audience": "需要深度研究與知識整理的AI使用者",
+   "use_cases": [
+    {
+     "title": "學術研究資料收集",
+     "how": "透過AI挖掘學術領域的原文資料，建立完整研究資料庫"
+    },
+    {
+     "title": "產業趨勢分析報告",
+     "how": "自動收集產業相關技術文獻，生成可視化分析報告"
+    },
+    {
+     "title": "知識商品化服務",
+     "how": "將整理好的知識內容轉化為可銷售的知識產品"
+    }
+   ],
+   "mermaid": "flowchart LR\n  n0[\"使用者問題\"]\n  n1[\"研究重點\"]\n  n2[\"搜尋代理\"]\n  n3[\"地圖建立\"]\n  n4[\"資料收集\"]\n  n5[\"文檔儲存\"]\n  n6[\"內容抽取\"]\n  n7[\"報告生成\"]\n  n8[\"資料看板\"]\n  n9[\"OCR工具\"]\n  n0 -->|輸入問題| n1\n  n1 -->|生成搜尋重點| n2\n  n2 -->|建立搜尋地圖| n3\n  n3 -->|導向資料來源| n4\n  n4 -->|儲存文檔| n5\n  n5 -->|抽取內容| n6\n  n6 -->|生成報告| n7\n  n7 -->|整合看板| n8\n  n5 -->|OCR處理| n9",
+   "analyzed_at": 1793214594.3695478
+  },
+  {
+   "full_name": "alchaincyf/huashu-motion",
+   "html_url": "https://github.com/alchaincyf/huashu-motion",
+   "description": "让你的agent一键直出商业级产品宣传片：会作曲，能指着画面改。Commercial-grade launch films by your coding agent — point at the frame to change it.",
+   "stars": 1848,
+   "license": "MIT",
+   "language": "JavaScript",
+   "topics": [
+    "agent-skills",
+    "animation",
+    "claude-code",
+    "codex",
+    "gsap",
+    "launch-video",
+    "motion-graphics",
+    "skills"
+   ],
+   "summary": "用agent一键生成商业级产品宣传片，能改画面、作曲。",
+   "audience": "需要快速制作宣传片的创业者、营销人员",
+   "use_cases": [
+    {
+     "title": "产品发布视频制作",
+     "how": "跟agent说「做30秒发布片」，它写脚本、配乐，等你修改"
+    },
+    {
+     "title": "数据可视化视频",
+     "how": "用CSV数据讲故事，数字可直接修改"
+    },
+    {
+     "title": "口播视频包装",
+     "how": "加字幕、标题卡，导出透明叠层用于剪辑"
+    }
+   ],
+   "mermaid": "flowchart LR\n  n0[\"Agent\"]\n  n1[\"提示词\"]\n  n2[\"脚本\"]\n  n3[\"配乐\"]\n  n4[\"编辑器\"]\n  n5[\"画面\"]\n  n6[\"评论\"]\n  n7[\"输出\"]\n  n8[\"FFmpeg\"]\n  n9[\"采样库\"]\n  n0 -->|接收提示| n1\n  n1 -->|生成脚本| n2\n  n1 -->|生成配乐| n3\n  n2 -->|打开编辑器| n4\n  n5 -->|接收评论| n6\n  n6 -->|修改画面| n5\n  n2 -->|生成输出| n7\n  n7 -->|导出视频| n8\n  n9 -->|使用采样| n3",
+   "analyzed_at": 1793214583.0618863
+  },
+  {
+   "full_name": "xerj-org/xerj",
+   "html_url": "https://github.com/xerj-org/xerj",
+   "description": "AI search engine and MCP server for bots and agents. One Rust binary indexes code, docs, logs, JSONL/CSV and PDFs for BM25 full-text, vector and hybrid search, code search without grep, agent memory and RAG. Elasticsearch-compatible API; Corpus Hub serves hundreds of reference memory corpora.",
+   "stars": 17288,
+   "license": "Apache-2.0",
+   "language": "Rust",
+   "topics": [
+    "agent-memory",
+    "ai-agents",
+    "bm25",
+    "claude-code",
+    "cli",
+    "code-search",
+    "cursor",
+    "database",
+    "elasticsearch",
+    "full-text-search",
+    "hybrid-search",
+    "jsonl",
+    "local-first",
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "rag",
+    "rust",
+    "search-engine",
+    "vector-search"
+   ],
+   "summary": "XERJ 是 AI 代理的搜尋引擎，能快速找到程式碼與文件的精準答案。",
+   "audience": "AI 代理開發者與需要高效搜尋的團隊",
+   "use_cases": [
+    {
+     "title": "程式碼參考搜尋",
+     "how": "代理指向任務，自動下載相似專案，索引後重用解決方案，減少重複撰寫。"
+    },
+    {
+     "title": "減少模型 token 費用",
+     "how": "透過參考已有解決方案，降低模型生成 token 數量，節省成本。"
+    },
+    {
+     "title": "快速搜尋與定位",
+     "how": "支援 BM25、向量與混合搜尋，快速找到特定程式碼或文件內容。"
+    }
+   ],
+   "mermaid": "flowchart LR\n  n0[\"索引器\"]\n  n1[\"搜尋器\"]\n  n2[\"Corpus Hub\"]\n  n3[\"API 網關\"]\n  n4[\"MCP 客戶端\"]\n  n5[\"資料庫\"]\n  n6[\"向量儲存\"]\n  n7[\"BM25 索引\"]\n  n8[\"搜尋查詢\"]\n  n9[\"結果排序器\"]\n  n0 -->|建立 BM25| n7\n  n0 -->|建立向量| n6\n  n2 -->|提供資料| n0\n  n1 -->|查詢 BM25| n7\n  n1 -->|查詢向量| n6\n  n1 -->|排序結果| n9\n  n3 -->|接收請求| n1\n  n4 -->|發送查詢| n3\n  n5 -->|資料存取| n3",
+   "analyzed_at": 1793206967.363919
+  },
+  {
+   "full_name": "kkkkhazix/aihot",
+   "html_url": "https://github.com/KKKKhazix/AIHOT",
+   "description": "一个自己找热点、自己写日报的网站框架。把信源和精选标准换成你的，它就是你的行业热点站。",
+   "stars": 8808,
+   "license": "MIT",
+   "language": "TypeScript",
+   "topics": [
+    "ai",
+    "chinese",
+    "content-curation",
+    "daily-digest",
+    "docker-compose",
+    "llm",
+    "mcp",
+    "news-aggregator",
+    "postgresql",
+    "rss",
+    "self-hosted",
+    "typescript"
+   ],
+   "summary": "自動抓取熱點新聞，生成每日報刊，適合各行各業自建資訊站。",
+   "audience": "需要自建行業資訊站的創業者與企業",
+   "use_cases": [
+    {
+     "title": "金融資訊站",
+     "how": "整合財經新聞與論壇，用金融知識篩選熱點，生成每日財經摘要"
+    },
+    {
+     "title": "法律資訊服務",
+     "how": "抓取法律論文與案例，用法律標準篩選，生成法律熱點分析報告"
+    },
+    {
+     "title": "科技產業通訊",
+     "how": "整合科技新聞與社群討論，用產業趨勢篩選，生成產業趨勢分析日報"
+    }
+   ],
+   "mermaid": "flowchart LR\n  n0[\"信源采集\"]\n  n1[\"预筛\"]\n  n2[\"评分模型\"]\n  n3[\"写作生成\"]\n  n4[\"事件聚簇\"]\n  n5[\"热度计算\"]\n  n6[\"日报生成\"]\n  n7[\"数据库\"]\n  n8[\"用户界面\"]\n  n9[\"后台管理\"]\n  n0 -->|数据输入| n1\n  n1 -->|预筛结果| n2\n  n2 -->|评分输出| n3\n  n3 -->|内容输入| n4\n  n4 -->|事件数据| n5\n  n5 -->|热度数据| n6\n  n6 -->|日报输出| n8\n  n8 -->|用户操作| n9\n  n7 -->|数据存储| n0\n  n7 -->|事件存储| n4",
+   "analyzed_at": 1793205020.7375593
+  },
+  {
+   "full_name": "ruvnet/ruview",
+   "html_url": "https://github.com/ruvnet/RuView",
+   "description": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
+   "stars": 100732,
+   "license": "MIT",
+   "language": "Rust",
+   "topics": [
+    "awesome",
+    "claude",
+    "densepose",
+    "esp32",
+    "firmware",
+    "home-assistant",
+    "home-automation",
+    "iot",
+    "monitoring",
+    "networking",
+    "npm",
+    "pose-estimation",
+    "react",
+    "rf",
+    "self-learning",
+    "skills",
+    "spatial-intelligence",
+    "typescript",
+    "wifi",
+    "wifi-security"
+   ],
+   "summary": "透過 WiFi 信號，無需視頻即可感知空間、監測生命跡象與人體活動。",
+   "audience": "智慧家庭、健康監測與空間感知應用開發者",
+   "use_cases": [
+    {
+     "title": "智慧家庭自動化",
+     "how": "透過 WiFi 信號偵測人數與活動，自動開關燈、調節溫度與警報異常狀態。"
+    },
+    {
+     "title": "健康監測服務",
+     "how": "無接觸監測呼吸與心跳，用於睡眠品質分析與健康狀態追蹤。"
+    },
+    {
+     "title": "安全與安防應用",
+     "how": "偵測跌倒、無動靜等異常行為，觸發警報與緊急通知。"
+    }
+   ],
+   "mermaid": "flowchart LR\n  n0[\"ESP32 CSI Sensor\"]\n  n1[\"WiFi Router\"]\n  n2[\"ruOS\"]\n  n3[\"Model Server\"]\n  n4[\"Home Assistant\"]\n  n5[\"AI Operator\"]\n  n6[\"Privacy Policy\"]\n  n7[\"ruView MetaHarness\"]\n  n8[\"ruOS Workspace\"]\n  n9[\"ruOS Sensor Mesh\"]\n  n1 -->|CSI 信號| n0\n  n0 -->|CSI 資料| n2\n  n2 -->|模型輸入| n3\n  n3 -->|狀態更新| n4\n  n2 -->|AI 輸入| n5\n  n5 -->|操作指令| n7\n  n2 -->|隱私標籤| n6\n  n9 -->|感測資料| n8",
+   "analyzed_at": 1793204912.5536265
+  },
+  {
+   "full_name": "wren-lang/wren",
+   "html_url": "https://github.com/wren-lang/wren",
+   "description": "The Wren Programming Language. Wren is a small, fast, class-based concurrent scripting language.",
+   "stars": 8163,
+   "license": "MIT",
+   "language": "Wren",
+   "topics": [
+    "bytecode",
+    "c",
+    "fibers",
+    "interpreter",
+    "language",
+    "scripting-languages",
+    "wren"
+   ],
+   "summary": "Wren 是一種輕量、快速、支援類別與協同程式的小型腳本語言。",
+   "audience": "需要嵌入腳本語言的應用開發者與系統設計者",
+   "use_cases": [
+    {
+     "title": "遊戲開發嵌入腳本",
+     "how": "在遊戲引擎中嵌入 Wren 來控制遊戲邏輯與 AI 行為"
+    },
+    {
+     "title": "自動化工具腳本化",
+     "how": "用 Wren 編寫自動化腳本，處理資料轉換與系統監控任務"
+    },
+    {
+     "title": "雲端服務配置腳本",
+     "how": "在雲端服務中使用 Wren 編寫配置與部署腳本，提升靈活性與可維護性"
+    }
+   ],
+   "mermaid": "flowchart LR\n  n0[\"解析器\"]\n  n1[\"編譯器\"]\n  n2[\"虛擬機器\"]\n  n3[\"執行時\"]\n  n4[\"協同程式排程器\"]\n  n5[\"垃圾回收\"]\n  n6[\"標準庫\"]\n  n7[\"C API\"]\n  n8[\"前端工具\"]\n  n9[\"瀏覽器執行器\"]\n  n0 -->|輸出 AST| n1\n  n1 -->|生成 bytecode| n2\n  n2 -->|執行指令| n3\n  n4 -->|排程協同程式| n3\n  n5 -->|管理記憶體| n3\n  n6 -->|提供函式| n3\n  n7 -->|與應用對接| n2\n  n8 -->|接收源碼| n0\n  n9 -->|瀏覽器執行| n2",
+   "analyzed_at": 1793118038.9013975
+  },
+  {
+   "full_name": "blendi-remade/agentcraft",
+   "html_url": "https://github.com/blendi-remade/agentcraft",
+   "description": "Manage your real AI agents, using Minecraft as your interface!",
+   "stars": 894,
+   "license": "MIT",
+   "language": "Java",
+   "topics": [],
+   "summary": "用 Minecraft 界面管理真實 AI 代理，進行程式碼開發與任務協作。",
+   "audience": "需要 AI 協助開發的團隊與企業",
+   "use_cases": [
+    {
+     "title": "AI 協助程式碼開發",
+     "how": "設定目標後，AI 代理會規劃任務並執行開發，最後由人類審核與合併程式碼。"
+    },
+    {
+     "title": "自動化程式碼審查",
+     "how": "AI 代理會在開發過程中即時監測程式碼變更，並提供即時的審查與建議。"
+    },
+    {
+     "title": "團隊協作與任務管理",
+     "how": "透過 Minecraft 界面進行任務指派與進度追蹤，提升團隊協作效率。"
+    }
+   ],
+   "mermaid": "flowchart LR\n  n0[\"控制台\"]\n  n1[\"任務牆\"]\n  n2[\"工作樹\"]\n  n3[\"監視器\"]\n  n4[\"差異螢幕\"]\n  n5[\"知識庫\"]\n  n6[\"Foreman\"]\n  n7[\"遊戲客戶端\"]\n  n8[\"Claude API\"]\n  n9[\"Git 儲存庫\"]\n  n0 -->|輸入目標| n1\n  n1 -->|分派任務| n2\n  n2 -->|監測變更| n3\n  n3 -->|顯示差異| n4\n  n4 -->|更新知識庫| n5\n  n6 -->|控制遊戲| n7\n  n7 -->|請求 AI 服務| n8\n  n8 -->|提交程式碼| n9",
+   "analyzed_at": 1793118029.8188682
+  },
+  {
+   "full_name": "konadu-akwasi-akuoko/hyper-frames",
+   "html_url": "https://github.com/Konadu-Akwasi-Akuoko/hyper-frames",
+   "description": "",
+   "stars": 1,
+   "license": "",
+   "language": "Python",
+   "topics": [],
+   "summary": "用 AI 生成視覺化框架，讓非程式師也能快速建置互動式網頁。",
+   "audience": "非程式師與設計師",
+   "use_cases": [
+    {
+     "title": "快速建置互動式網頁",
+     "how": "透過拖曳元件與 AI 生成視覺化內容，無需寫程式即可建置互動式網頁。"
+    },
+    {
+     "title": "企業內部知識庫建置",
+     "how": "利用 AI 生成知識圖譜與視覺化內容，協助企業快速建置內部知識庫與資料展示系統。"
+    },
+    {
+     "title": "教育機構互動教學平台",
+     "how": "教師可透過 AI 生成互動式教學內容，提升學生學習興趣與理解度。"
+    }
+   ],
+   "mermaid": "flowchart LR\n  n0[\"AI模型\"]\n  n1[\"使用者介面\"]\n  n2[\"資料庫\"]\n  n3[\"網頁伺服器\"]\n  n4[\"渲染引擎\"]\n  n5[\"API 網關\"]\n  n0 -->|生成內容| n4\n  n1 -->|請求傳送| n5\n  n5 -->|處理請求| n3\n  n3 -->|傳遞資料| n4\n  n4 -->|渲染結果| n1\n  n2 -->|資料存取| n5",
+   "analyzed_at": 1793082193.0191827
+  },
+  {
+   "full_name": "graphify-labs/graphify",
+   "html_url": "https://github.com/Graphify-Labs/graphify",
+   "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
+   "stars": 136343,
+   "license": "Apache-2.0",
+   "language": "Python",
+   "topics": [
+    "ai-agents",
+    "antigravity",
+    "ast",
+    "claude-code",
+    "code-analysis",
+    "code-search",
+    "codex",
+    "cursor",
+    "developer-tools",
+    "gemini",
+    "graphify",
+    "graphrag",
+    "knowledge-graph",
+    "leiden",
+    "llm",
+    "mcp",
+    "openclaw",
+    "rag",
+    "skills",
+    "tree-sitter"
+   ],
+   "summary": "把任何專案的程式碼、文件、SQL與PDF轉成可查詢的知識圖譜",
+   "audience": "開發者、AI工程師、企業資料團隊",
+   "use_cases": [
+    {
+     "title": "AI代理程式優化",
+     "how": "將專案轉為知識圖譜，讓AI代理直接查詢關係，減少token消耗"
+    },
+    {
+     "title": "企業知識管理",
+     "how": "將分散的技術文件與程式碼整合為圖譜，提升內部知識搜尋效率"
+    },
+    {
+     "title": "軟體品質分析",
+     "how": "透過圖譜分析程式結構與依賴關係，協助進行程式碼審查與改進"
+    }
+   ],
+   "mermaid": "flowchart LR\n  n0[\"程式碼解析器\"]\n  n1[\"AST建構器\"]\n  n2[\"圖譜生成器\"]\n  n3[\"知識圖譜\"]\n  n4[\"查詢引擎\"]\n  n5[\"社群偵測器\"]\n  n6[\"邊類別辨識\"]\n  n7[\"圖譜儲存\"]\n  n8[\"圖譜瀏覽器\"]\n  n9[\"圖譜報告\"]\n  n0 -->|解析輸出| n1\n  n1 -->|AST輸入| n2\n  n2 -->|生成圖譜| n3\n  n3 -->|圖譜查詢| n4\n  n3 -->|社群分析| n5\n  n6 -->|邊標籤| n3\n  n3 -->|儲存圖譜| n7\n  n3 -->|顯示圖譜| n8\n  n3 -->|生成報告| n9",
+   "analyzed_at": 1793082186.3082047
+  },
+  {
+   "full_name": "stablyai/orca",
+   "html_url": "https://github.com/stablyai/orca",
+   "description": "Orca is the place for working with a fleet of agents (e.g. Grok Bot, Claude Code). Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.",
+   "stars": 107323,
+   "license": "MIT",
+   "language": "TypeScript",
+   "topics": [
+    "ade",
+    "agent-ide",
+    "ai-agents",
+    "automation",
+    "bot",
+    "claude-code",
+    "codex",
+    "ghostty",
+    "grok-bot",
+    "hermes-agent",
+    "mobile-app",
+    "muse",
+    "openclaw",
+    "opencode",
+    "orchestration",
+    "pi",
+    "runtime",
+    "terminal",
+    "worktrees",
+    "yc-backed"
+   ],
+   "summary": "Orca 是一個能同時運行多個 AI 代理的平台，讓你輕鬆管理不同 AI 的工作流程。",
+   "audience": "開發者、AI 工程師、企業自動化團隊",
+   "use_cases": [
+    {
+     "title": "企業 AI 代理管理",
+     "how": "企業可透過 Orca 管理多種 AI 代理，如 Codex、ClaudeCode，並進行任務分配與結果比較。"
+    },
+    {
+     "title": "開發者工具整合",
+     "how": "開發者可將 Orca 結合 GitHub、Linear 等工具，直接在 IDE 中處理 PR、Issue 與任務追蹤。"
+    },
+    {
+     "title": "遠端運算與協作",
+     "how": "透過 SSH 功能，Orca 可在遠端伺服器上運行 AI 代理，並支援自動重連與端口轉發，提升團隊協作效率。"
+    }
+   ],
+   "mermaid": "flowchart LR\n  n0[\"Orca 核心\"]\n  n1[\"代理工作樹\"]\n  n2[\"行動應用\"]\n  n3[\"終端分屏\"]\n  n4[\"GitHub/Linear 結合\"]\n  n5[\"SSH 服務器\"]\n  n6[\"Orca 命令列\"]\n  n7[\"通知系統\"]\n  n0 -->|管理| n1\n  n0 -->|同步| n2\n  n0 -->|整合| n3\n  n0 -->|連接| n4\n  n0 -->|連接| n5\n  n0 -->|控制| n6\n  n0 -->|通知| n7",
+   "analyzed_at": 1793082176.404656
+  },
+  {
+   "full_name": "anomalyco/opencode",
+   "html_url": "https://github.com/anomalyco/opencode",
+   "description": "The open source coding agent.",
+   "stars": 222067,
+   "license": "MIT",
+   "language": "TypeScript",
+   "topics": [],
+   "summary": "AI 編碼助手，能自動生成、修改與分析程式碼。",
+   "audience": "開發者、企業工程師與 AI 專案團隊",
+   "use_cases": [
+    {
+     "title": "企業內部工具",
+     "how": "部署為內部服務，協助團隊快速開發與維護專案"
+    },
+    {
+     "title": "開發者工具",
+     "how": "用於個人專案，提升寫碼效率與錯誤修正速度"
+    },
+    {
+     "title": "AI 教學平台",
+     "how": "整合至線上課程，提供即時編碼練習與反饋"
+    }
+   ],
+   "mermaid": "flowchart LR\n  n0[\"命令列介面\"]\n  n1[\"AI 編碼代理\"]\n  n2[\"程式碼資料庫\"]\n  n3[\"REST API\"]\n  n4[\"網頁介面\"]\n  n5[\"終端機模擬\"]\n  n6[\"擴充插件\"]\n  n7[\"認證系統\"]\n  n8[\"日誌系統\"]\n  n9[\"配置管理\"]\n  n0 -->|指令傳遞| n1\n  n1 -->|查詢資料| n2\n  n2 -->|回傳結果| n1\n  n1 -->|API 互動| n3\n  n3 -->|網頁顯示| n4\n  n4 -->|終端機連線| n5\n  n5 -->|指令輸入| n1\n  n7 -->|權限驗證| n1\n  n8 -->|日誌記錄| n1\n  n9 -->|配置載入| n1",
+   "analyzed_at": 1793082167.1278346
+  },
+  {
+   "full_name": "lexmount/moli",
+   "html_url": "https://github.com/lexmount/moli",
+   "description": "Best headless browser for AI agents. Lite, Fast, High-Compatibility. Built in Rust",
+   "stars": 20977,
+   "license": "Apache-2.0",
+   "language": "Rust",
+   "topics": [
+    "ai-agents",
+    "ai-tools",
+    "browser",
+    "browser-automation",
+    "cloud-browser",
+    "headless",
+    "headless-browser",
+    "kitesurf",
+    "playwright",
+    "puppeteer",
+    "rust",
+    "servo",
+    "web-crawler",
+    "web-crawling",
+    "web-scraper",
+    "web-scraping"
+   ],
+   "summary": "Moli 是專為 AI 代理人設計的無頭瀏覽器，能快速抓取網頁、執行 JavaScript 並提取資料。",
+   "audience": "AI 代理人開發者、自動化工具創作者、網頁爬蟲工程師",
+   "use_cases": [
+    {
+     "title": "AI 代理人網頁資料抓取",
+     "how": "透過 CLI 或 WebDriver 執行網頁抓取，提取 HTML/Markdown 結構資料供 AI 分析"
+    },
+    {
+     "title": "網頁搜尋與資訊整合",
+     "how": "結合瀏覽器自動化與搜尋功能，讓 AI 代理人執行網頁搜尋並整合結果"
+    },
+    {
+     "title": "網頁測試與 UI 自動化",
+     "how": "透過 CDP 協議進行 UI 測試，模擬使用者操作並驗證網頁行為"
+    }
+   ],
+   "mermaid": "flowchart LR\n  n0[\"瀏覽器核心\"]\n  n1[\"JavaScript 引擎\"]\n  n2[\"DOM 解析器\"]\n  n3[\"佈局引擎\"]\n  n4[\"資源管理器\"]\n  n5[\"網路層\"]\n  n6[\"自動化協議\"]\n  n7[\"CLI 介面\"]\n  n8[\"WebDriver 網橋\"]\n  n9[\"CDP 網橋\"]\n  n5 -->|請求| n0\n  n0 -->|執行| n1\n  n1 -->|解析| n2\n  n2 -->|佈局| n3\n  n3 -->|資源載入| n4\n  n4 -->|傳輸| n6\n  n6 -->|CLI 傳輸| n7\n  n6 -->|WebDriver 傳輸| n8\n  n6 -->|CDP 傳輸| n9",
+   "analyzed_at": 1793080566.5798695
+  },
+  {
+   "full_name": "lucasmarkes/hairline",
+   "html_url": "https://github.com/lucasmarkes/hairline",
+   "description": "Isometric line figures that answer the pointer. For React and for anything with a DOM.",
+   "stars": 3008,
+   "license": "MIT",
+   "language": "TypeScript",
+   "topics": [
+    "animation",
+    "isometric",
+    "react",
+    "shadcn",
+    "svg",
+    "typescript"
+   ],
+   "summary": "用等距線圖形互動，讓指針控制動畫效果。",
+   "audience": "需要互動式動畫的網頁開發者",
+   "use_cases": [
+    {
+     "title": "互動式產品展示",
+     "how": "用指針控制產品模型的動態展示，提升用戶體驗"
+    },
+    {
+     "title": "數據視覺化工具",
+     "how": "將數據以動態等距圖形呈現，增加視覺吸引力"
+    },
+    {
+     "title": "遊戲互動元素",
+     "how": "用指針控制遊戲中的動畫效果，增加遊戲趣味性"
+    }
+   ],
+   "mermaid": "flowchart LR\n  n0[\"SVG渲染器\"]\n  n1[\"指針追蹤\"]\n  n2[\"動畫引擎\"]\n  n3[\"主題管理\"]\n  n4[\"選項解析\"]\n  n5[\"DOM適配器\"]\n  n1 -->|傳遞座標| n2\n  n4 -->|傳遞選項| n2\n  n3 -->|傳遞主題| n0\n  n2 -->|傳遞動畫狀態| n0\n  n5 -->|傳遞DOM元素| n0",
+   "analyzed_at": 1793031505.5415552
+  },
+  {
+   "full_name": "zagitta/gpu-unlock",
+   "html_url": "https://github.com/Zagitta/gpu-unlock",
+   "description": "Unlock FP/BF16 instruction issue rate on Nvidia 3000's cards to their professional equivalents",
+   "stars": 1416,
+   "license": "",
+   "language": "C",
+   "topics": [],
+   "summary": "提升Nvidia 3000系列顯卡的FP/BF16運算效能至專業級",
+   "audience": "需要高運算效能的深度學習與科學計算使用者",
+   "use_cases": [
+    {
+     "title": "深度學習訓練加速",
+     "how": "透過提升FP/BF16運算速度，縮短神經網絡訓練時間"
+    },
+    {
+     "title": "科學計算模擬優化",
+     "how": "提高GFLOPS效能，加快物理或化學模擬計算速度"
+    },
+    {
+     "title": "遊戲與視覺渲染提升",
+     "how": "提高顯卡效能，改善遊戲畫質與流暢度"
+    }
+   ],
+   "mermaid": "flowchart LR\n  n0[\"核心模組\"]\n  n1[\"UEFI\"]\n  n2[\"NVIDIA驅動\"]\n  n3[\"固件\"]\n  n4[\"initramfs\"]\n  n5[\"PCI總線\"]\n  n6[\"顯卡\"]\n  n7[\"systemd\"]\n  n8[\"GRUB\"]\n  n9[\"核心\"]\n  n0 -->|載入| n2\n  n1 -->|讀取| n0\n  n3 -->|寫入| n6\n  n4 -->|載入| n9\n  n5 -->|通訊| n6\n  n7 -->|管理| n4\n  n8 -->|啟動| n9\n  n9 -->|控制| n5",
+   "analyzed_at": 1792848493.863108
+  },
+  {
+   "full_name": "wesbos/3d-model-anything",
+   "html_url": "https://github.com/wesbos/3d-model-anything",
+   "description": "Capture iPhone LiDAR and photos, reconstruct editable Three.js rooms, and explore them in a browser.",
+   "stars": 1365,
+   "license": "其他",
+   "language": "Swift",
+   "topics": [],
+   "summary": "用iPhone拍攝空間，生成可編輯的3D房間模型，瀏覽器即可瀏覽。",
+   "audience": "室內設計師、空間規劃師、虛擬導覽開發者",
+   "use_cases": [
+    {
+     "title": "室內設計方案展示",
+     "how": "將客戶空間掃描後生成3D模型，供客戶線上瀏覽與修改設計方案。"
+    },
+    {
+     "title": "虛擬看屋服務",
+     "how": "房地產經紀可提供客戶線上3D看屋，提升購屋體驗與成交率。"
+    },
+    {
+     "title": "AR空間裝修預覽",
+     "how": "結合AR技術，讓用戶在真實空間中預覽裝修效果與家具擺放。"
+    }
+   ],
+   "mermaid": "flowchart LR\n  n0[\"iPhone\"]\n  n1[\"LiDAR\"]\n  n2[\"Camera\"]\n  n3[\"掃描處理\"]\n  n4[\"AI Agent\"]\n  n5[\"Three.js\"]\n  n6[\"瀏覽器查看器\"]\n  n7[\"資料庫\"]\n  n8[\"雲端儲存\"]\n  n9[\"用戶介面\"]\n  n0 -->|傳輸LiDAR數據| n1\n  n0 -->|傳輸照片| n2\n  n1 -->|傳輸點雲數據| n3\n  n2 -->|傳輸照片| n3\n  n3 -->|傳輸處理後數據| n4\n  n4 -->|生成3D模型| n5\n  n5 -->|渲染模型| n6\n  n6 -->|顯示結果| n9\n  n3 -->|儲存處理數據| n7\n  n7 -->|同步雲端| n8",
+   "analyzed_at": 1792840474.4835355
+  },
+  {
+   "full_name": "peach-mitao/peach",
+   "html_url": "https://github.com/peach-mitao/peach",
+   "description": "Peach 蜜桃：单用户、本地优先的个人媒体系统 · Single-user, local-first personal media system",
+   "stars": 9745,
+   "license": "AGPL-3.0",
+   "language": "Python",
+   "topics": [
+    "jav",
+    "local-first",
+    "media-library",
+    "media-manager",
+    "python",
+    "react",
+    "self-hosted",
+    "video-player"
+   ],
+   "summary": "把本地硬盘、网盘和关注的创作者内容，整合成一个私人影片馆藏。",
+   "audience": "需要管理私人影片收藏的个人用户",
+   "use_cases": [
+    {
+     "title": "整合多平台影片收藏",
+     "how": "将本地硬盘、网盘与创作者站点内容统一管理，方便查找与播放"
+    },
+    {
+     "title": "自动补齐影片资料",
+     "how": "自动读取 NFO 和海报，补全标题、女优等信息，支持手动修改"
+    },
+    {
+     "title": "跨平台关注创作者更新",
+     "how": "同步 FANBOX、Patreon 等平台的创作者内容，集中查看更新"
+    }
+   ],
+   "mermaid": "flowchart LR\n  n0[\"React 界面\"]\n  n1[\"媒体扫描器\"]\n  n2[\"本地存储\"]\n  n3[\"网盘挂载工具\"]\n  n4[\"字幕加载器\"]\n  n5[\"创作者追踪器\"]\n  n6[\"云下载模块\"]\n  n7[\"浏览器用户脚本\"]\n  n8[\"远程诊断服务\"]\n  n9[\"数据上传模块\"]\n  n0 -->|操作指令| n1\n  n1 -->|扫描结果| n2\n  n3 -->|挂载目录| n1\n  n4 -->|字幕数据| n0\n  n5 -->|更新内容| n0\n  n6 -->|下载内容| n2\n  n7 -->|番号提交| n6\n  n8 -->|诊断数据| n9\n  n9 -->|上传明细| n8",
+   "analyzed_at": 1792833728.6139631
+  },
+  {
+   "full_name": "henrycauan/rovyl",
+   "html_url": "https://github.com/HenryCauan/rovyl",
+   "description": "Radial launcher for Windows. Hold the middle mouse button, aim, release — your apps open under the cursor.",
+   "stars": 81,
+   "license": "GPL-3.0",
+   "language": "TypeScript",
+   "topics": [
+    "app-launcher",
+    "desktop-app",
+    "electron",
+    "hotkeys",
+    "launcher",
+    "pie-menu",
+    "productivity",
+    "radial-menu",
+    "react",
+    "typescript",
+    "windows",
+    "windows-11"
+   ],
+   "summary": "用中鍵滑鼠按住、瞄準、放手，應用程式會在游標下方打開。",
+   "audience": "需要快速打開應用程式的 Windows 使用者",
+   "use_cases": [
+    {
+     "title": "提高工作效率",
+     "how": "透過快速啟動應用程式，減少尋找桌面圖示的時間，提升工作流效率。"
+    },
+    {
+     "title": "遊戲玩家切換應用",
+     "how": "在遊戲中使用中鍵滑鼠快速切換至其他應用程式，不影響遊戲體驗。"
+    },
+    {
+     "title": "多工作空間管理",
+     "how": "透過不同工作區的切換鍵，快速切換至不同工作環境，如工作、遊戲、串流等。"
+    }
+   ],
+   "mermaid": "flowchart LR\n  n0[\"Electron\"]\n  n1[\"Vite\"]\n  n2[\"TypeScript\"]\n  n3[\"React\"]\n  n4[\"Win32 API\"]\n  n5[\"Icon Pipeline\"]\n  n6[\"Hotkeys\"]\n  n7[\"Radial Menu\"]\n  n8[\"Persistence\"]\n  n9[\"User Data\"]\n  n1 -->|Build| n0\n  n2 -->|Compile| n1\n  n3 -->|Render| n0\n  n4 -->|Call| n0\n  n5 -->|Provide| n0\n  n6 -->|Trigger| n0\n  n7 -->|Control| n0\n  n8 -->|Save| n9\n  n9 -->|Load| n0",
+   "analyzed_at": 1792789475.16357
+  },
+  {
+   "full_name": "dietrichgebert/ponytail",
+   "html_url": "https://github.com/DietrichGebert/ponytail",
+   "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+   "stars": 174673,
+   "license": "MIT",
+   "language": "JavaScript",
+   "topics": [
+    "agent-skills",
+    "ai-agents",
+    "claude",
+    "claude-code",
+    "claude-code-plugin",
+    "cursor-rules",
+    "developer-tools",
+    "llm",
+    "prompt-engineering",
+    "yagni"
+   ],
+   "summary": "讓AI代理像懶懶的高階工程師一樣思考，寫出最精準的程式碼。",
+   "audience": "AI代理開發者與企業技術團隊",
+   "use_cases": [
+    {
+     "title": "降低開發成本與時間",
+     "how": "透過減少程式碼量與提高效率，降低開發與維護成本。"
+    },
+    {
+     "title": "提升程式碼品質與安全性",
+     "how": "自動加入驗證、錯誤處理與安全機制，確保程式碼穩定且安全。"
+    },
+    {
+     "title": "加速產品上線與測試覆蓋",
+     "how": "自動生成測試用例，提高測試覆蓋率並縮短測試時間。"
+    }
+   ],
+   "mermaid": "flowchart LR\n  n0[\"AI Agent\"]\n  n1[\"程式碼倉庫\"]\n  n2[\"Ponytail 核心\"]\n  n3[\"提示工程\"]\n  n4[\"程式碼生成\"]\n  n5[\"測試框架\"]\n  n6[\"程式碼重用\"]\n  n7[\"安全性檢查\"]\n  n8[\"效能監控\"]\n  n9[\"審計報告\"]\n  n0 -->|接收提示| n3\n  n3 -->|生成指令| n2\n  n2 -->|生成程式碼| n4\n  n4 -->|寫入倉庫| n1\n  n1 -->|執行測試| n5\n  n5 -->|監控效能| n8\n  n1 -->|重用程式碼| n6\n  n1 -->|檢查安全| n7\n  n7 -->|生成報告| n9",
+   "analyzed_at": 1792782663.5877619
+  },
+  {
+   "full_name": "morluto/rea",
+   "html_url": "https://github.com/morluto/rea",
+   "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+   "stars": 372194,
+   "license": "MIT",
+   "language": "TypeScript",
+   "topics": [
+    "agent-skills",
+    "ai-agents",
+    "binary-analysis",
+    "claude-code",
+    "cli",
+    "codex",
+    "cordis",
+    "decompiler",
+    "developer-tools",
+    "dsh",
+    "dsh-plugin",
+    "ghidra",
+    "hopper",
+    "llm",
+    "mcp",
+    "model-context-protocol",
+    "rea",
+    "reverse-engineering",
+    "static-analysis",
+    "touhou"
+   ],
+   "summary": "透過代理人逆向工程任何應用，從行為到原生二進位皆可分析。",
+   "audience": "逆向工程師、安全研究員、軟體開發者",
+   "use_cases": [
+    {
+     "title": "逆向分析競爭對手應用功能",
+     "how": "使用 REA 逆向分析對手應用，理解其功能實現方式，並用於自身產品開發。"
+    },
+    {
+     "title": "安全漏洞驗證與修補",
+     "how": "透過 REA 分析應用的二進位與行為，找出潛在安全漏洞並進行修補。"
+    },
+    {
+     "title": "開發類似功能的內部工具",
+     "how": "利用 REA 提供的分析結果，開發與目標應用功能相似的內部工具或服務。"
+    }
+   ],
+   "mermaid": "flowchart LR\n  n0[\"代理人\"]\n  n1[\"MCP 服務\"]\n  n2[\"二進位分析器\"]\n  n3[\"JavaScript 分析器\"]\n  n4[\"IDA/Ghidra/Hopper\"]\n  n5[\"證據存儲\"]\n  n6[\"CLI 界面\"]\n  n7[\"結果展示\"]\n  n0 -->|請求分析| n1\n  n1 -->|分派任務| n2\n  n2 -->|儲存證據| n5\n  n2 -->|返回結果| n7\n  n0 -->|請求分析| n3\n  n3 -->|儲存證據| n5\n  n3 -->|返回結果| n7\n  n4 -->|儲存證據| n5\n  n6 -->|命令請求| n1\n  n6 -->|顯示結果| n7",
+   "analyzed_at": 1792781732.032611
+  },
+  {
+   "full_name": "debpalash/voicestudio",
+   "html_url": "https://github.com/debpalash/VoiceStudio",
+   "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
+   "stars": 82880,
+   "license": "AGPL-3.0",
+   "language": "Python",
+   "topics": [
+    "ai",
+    "audiobook",
+    "cuda",
+    "dubbing",
+    "elevenlabs-alternative",
+    "huggingface",
+    "local-first",
+    "mlx",
+    "omnivoice-studio",
+    "speech-to-text",
+    "text-to-speech",
+    "transcription",
+    "translate",
+    "tts",
+    "voice-ai",
+    "voice-cloning",
+    "voice-generation",
+    "voicestudio",
+    "workflow"
+   ],
+   "summary": "VoiceStudio 是開源的聲音克隆與語音生成工具，能用於語音設計、影片配音、文字轉語音等多種用途。",
+   "audience": "需要語音生成、配音、文字轉語音的創作者與企業",
+   "use_cases": [
+    {
+     "title": "影片配音服務",
+     "how": "提供配音服務，客戶上傳影片與文字，自動生成配音後交付。"
+    },
+    {
+     "title": "語音內容創作",
+     "how": "創作語音內容如有聲書、廣播節目，利用語音生成技術快速製作。"
+    },
+    {
+     "title": "企業內部通訊",
+     "how": "企業用語音生成技術製作自動化通訊內容，如會議記錄、簡報配音等。"
+    }
+   ],
+   "mermaid": "flowchart LR\n  n0[\"Electron App\"]\n  n1[\"Python Backend\"]\n  n2[\"CUDA Acceleration\"]\n  n3[\"Model Management\"]\n  n4[\"Speech-to-Text\"]\n  n5[\"Text-to-Speech\"]\n  n6[\"Local API\"]\n  n7[\"MCP\"]\n  n8[\"User Interface\"]\n  n9[\"Data Storage\"]\n  n0 -->|API Call| n1\n  n1 -->|GPU Processing| n2\n  n1 -->|Model Access| n3\n  n4 -->|Input Data| n1\n  n1 -->|Output Data| n5\n  n1 -->|API Expose| n6\n  n6 -->|Service Integrat| n7\n  n1 -->|UI Data| n8\n  n8 -->|Data Save| n9",
+   "analyzed_at": 1792781720.8209095
+  },
+  {
+   "full_name": "lyogavin/airllm",
+   "html_url": "https://github.com/lyogavin/airllm",
+   "description": "AirLLM 2.8T LLM inference with single 4GB GPU",
+   "stars": 40450,
+   "license": "Apache-2.0",
+   "language": "Jupyter Notebook",
+   "topics": [
+    "chinese-llm",
+    "chinese-nlp",
+    "finetune",
+    "generative-ai",
+    "instruct-gpt",
+    "instruction-set",
+    "llama",
+    "llm",
+    "lora",
+    "open-models",
+    "open-source",
+    "open-source-models",
+    "qlora"
+   ],
+   "summary": "AirLLM 讓超大語言模型在4GB顯卡運行，無需壓縮或剪枝。",
+   "audience": "需要運行大語言模型的開發者與企業",
+   "use_cases": [
+    {
+     "title": "雲端服務提供商",
+     "how": "提供低成本的LLM推理服務，吸引企業使用其平台"
+    },
+    {
+     "title": "AI應用開發者",
+     "how": "快速部署大模型應用，降低硬體成本與技術門檻"
+    },
+    {
+     "title": "研究機構",
+     "how": "進行大規模語言模型的實驗與研究，節省計算資源"
+    }
+   ],
+   "mermaid": "flowchart LR\n  n0[\"模型載入器\"]\n  n1[\"記憶體管理\"]\n  n2[\"量化器\"]\n  n3[\"GPU加速器\"]\n  n4[\"推理引擎\"]\n  n5[\"輸出處理器\"]\n  n6[\"磁碟儲存\"]\n  n7[\"模型分割器\"]\n  n8[\"快取管理\"]\n  n9[\"模型壓縮器\"]\n  n0 -->|載入模型| n7\n  n7 -->|儲存分割模型| n6\n  n6 -->|讀取模型| n1\n  n1 -->|分配記憶體| n2\n  n2 -->|量化模型| n9\n  n9 -->|壓縮模型| n3\n  n3 -->|加速推理| n4\n  n4 -->|處理輸出| n5\n  n5 -->|儲存結果| n8",
+   "analyzed_at": 1792781591.5382717
+  },
+  {
+   "full_name": "deepbeepmeep/wangp",
+   "html_url": "https://github.com/deepbeepmeep/WanGP",
+   "description": "A fast AI Video Generator for the GPU Poor. Supports Minimax H3, LTX-2.3/2.5, Wan 2.1/2.2,  Qwen Image 1/2, Krea 2, Hunyuan Video, LTX  Video and Flux.",
+   "stars": 10988,
+   "license": "其他",
+   "language": "Python",
+   "topics": [
+    "ai",
+    "flux",
+    "flux2",
+    "generative-ai",
+    "hunyuan-video",
+    "krea",
+    "ltx-2",
+    "ltx-video",
+    "minimax-h3",
+    "qwen",
+    "tts",
+    "video",
+    "wan"
+   ],
+   "summary": "WanGP 是一個讓 GPU 資源不足也能快速生成影像與影片的 AI 工具。",
+   "audience": "GPU 資源有限的創作者與創業者",
+   "use_cases": [
+    {
+     "title": "低成本影片製作",
+     "how": "使用低規格 GPU 生成影片，節省硬體投資與運算成本。"
+    },
+    {
+     "title": "AI 影像創作服務",
+     "how": "提供 AI 影像生成服務，吸引客戶以訂單形式使用。"
+    },
+    {
+     "title": "內容創作工具整合",
+     "how": "整合 AI 生成工具至自建平台，提升內容生產效率與多樣性。"
+    }
+   ],
+   "mermaid": "flowchart LR\n  n0[\"UI 界面\"]\n  n1[\"模型管理\"]\n  n2[\"生成引擎\"]\n  n3[\"資料處理\"]\n  n4[\"儲存系統\"]\n  n5[\"API 介面\"]\n  n6[\"LoRA 管理\"]\n  n7[\"量化模型\"]\n  n8[\"語言模型\"]\n  n9[\"音訊處理\"]\n  n0 -->|指令傳遞| n1\n  n1 -->|模型調用| n2\n  n2 -->|資料處理| n3\n  n3 -->|資料儲存| n4\n  n0 -->|API 調用| n5\n  n6 -->|LoRA 加載| n2\n  n7 -->|模型載入| n2\n  n8 -->|語言模型整合| n2\n  n9 -->|音訊處理| n2",
+   "analyzed_at": 1792781505.4045782
+  },
+  {
+   "full_name": "openmoss/moss-image",
+   "html_url": "https://github.com/OpenMOSS/MOSS-Image",
+   "description": "Official repository for MOSS-Image, a 5B-parameter base DiT model with high-quality text rendering, layout generation, and efficient fine-tuning.",
+   "stars": 1614,
+   "license": "Apache-2.0",
+   "language": "Python",
+   "topics": [
+    "controllable-generation",
+    "foundation-models",
+    "image-generation",
+    "text-rendering",
+    "text-to-image"
+   ],
+   "summary": "MOSS-Image 是一個能生成高品質圖像與文字排版的 AI 模型，能根據文字指令創作圖像與文字排版。",
+   "audience": "圖像生成與設計師、AI 開發者、內容創作者",
+   "use_cases": [
+    {
+     "title": "圖像生成服務",
+     "how": "提供 API 接口，讓企業或應用程式直接調用 MOSS-Image 生成圖像，收取使用費。"
+    },
+    {
+     "title": "文字排版設計",
+     "how": "為設計師提供文字排版工具，根據文字內容自動生成美觀的排版設計，收取訂閱費。"
+    },
+    {
+     "title": "自訂模型訓練",
+     "how": "為企業提供模型微調服務，根據其特定需求訓練 MOSS-Image，收取訓練費用。"
+    }
+   ],
+   "mermaid": "flowchart LR\n  n0[\"使用者輸入\"]\n  n1[\"分詞器\"]\n  n2[\"MOSS-Image 模型\"]\n  n3[\"圖像生成器\"]\n  n4[\"排版生成器\"]\n  n5[\"生成結果\"]\n  n0 -->|輸入文字| n1\n  n1 -->|轉換為向量| n2\n  n2 -->|生成圖像| n3\n  n2 -->|生成排版| n4\n  n3 -->|輸出圖像| n5\n  n4 -->|輸出排版| n5",
+   "analyzed_at": 1792781349.3348224
+  },
+  {
+   "full_name": "jenna-russell/storyscope",
+   "html_url": "https://github.com/jenna-russell/storyscope",
+   "description": "This repo holds the code for the paper \"StoryScope: Investigating idiosyncrasies in AI fiction\".",
+   "stars": 279,
+   "license": "MIT",
+   "language": "Python",
+   "topics": [],
+   "summary": "自動分析AI與人類寫作的敘事特徵，協助區分風格與來源",
+   "audience": "AI研究者、內容分析師、著作權專家",
+   "use_cases": [
+    {
+     "title": "AI寫作辨識系統開發",
+     "how": "透過特徵分析建立模型，區分AI與人類創作"
+    },
+    {
+     "title": "著作權歸屬分析工具",
+     "how": "根據敘事特徵進行多作者歸屬分析與比對"
+    },
+    {
+     "title": "敘事風格研究平台",
+     "how": "分析不同AI模型的敘事模式與風格差異"
+    }
+   ],
+   "mermaid": "flowchart LR\n  n0[\"故事生成\"]\n  n1[\"模板抽取\"]\n  n2[\"跨來源比較\"]\n  n3[\"特徵發現\"]\n  n4[\"分類系統建構\"]\n  n5[\"特徵套用\"]\n  n6[\"分類器訓練\"]\n  n7[\"特徵重要性分析\"]\n  n0 -->|輸出故事| n1\n  n1 -->|輸出模板| n2\n  n2 -->|輸出比較結果| n3\n  n3 -->|輸出特徵| n4\n  n4 -->|輸出分類系統| n5\n  n5 -->|輸出特徵資料| n6\n  n6 -->|輸出分類結果| n7",
+   "analyzed_at": 1792781197.707841
+  },
+  {
+   "full_name": "nanako0129/sepia",
+   "html_url": "https://github.com/Nanako0129/sepia",
+   "description": "De-AI writing skill for any Agent Skills-compatible agent (77+ via the Skills CLI), with native plugins for Claude Code, Codex, Grok Build, and Antigravity. Narrative-architecture repair for fiction, venue-matched rules for professional prose. Based on StoryScope (arXiv:2604.03136).",
+   "stars": 3441,
+   "license": "MIT",
+   "language": "Python",
+   "topics": [
+    "agent-skills",
+    "ai-writing",
+    "antigravity",
+    "claude-code",
+    "codex",
+    "developer-tools",
+    "fiction",
+    "grok",
+    "humanizer",
+    "llm",
+    "prompt-engineering",
+    "writing-tools"
+   ],
+   "summary": "讓AI寫出更像人類的文本，從結構到風格全面改寫",
+   "audience": "AI寫作工具開發者與專業文案工作者",
+   "use_cases": [
+    {
+     "title": "AI小說風格改寫",
+     "how": "透過結構分析與風格調整，讓AI小說更接近人類創作"
+    },
+    {
+     "title": "專業文案優化",
+     "how": "根據不同領域規則，自動調整文案風格與內容結構"
+    },
+    {
+     "title": "多模型內容轉換",
+     "how": "將不同AI模型的輸出轉換為符合人類寫作規範的文本"
+    }
+   ],
+   "mermaid": "flowchart LR\n  n0[\"輸入解析\"]\n  n1[\"敘事分析\"]\n  n2[\"規則引擎\"]\n  n3[\"風格轉換\"]\n  n4[\"輸出生成\"]\n  n5[\"模型適配\"]\n  n6[\"反饋循環\"]\n  n7[\"版本控制\"]\n  n8[\"插件管理\"]\n  n9[\"效能監控\"]\n  n0 -->|解析輸入| n1\n  n1 -->|分析敘事| n2\n  n2 -->|應用規則| n3\n  n3 -->|生成風格| n4\n  n4 -->|適配模型| n5\n  n5 -->|監控效能| n9\n  n6 -->|反饋規則| n2\n  n8 -->|管理插件| n5\n  n7 -->|版本控制| n4",
+   "analyzed_at": 1792781189.4866395
+  },
+  {
+   "full_name": "tt-a1i/archify",
+   "html_url": "https://github.com/tt-a1i/archify",
+   "description": "Turn any idea, plan, or codebase into a beautiful interactive diagram. An agent skill for Claude Code, Codex, and more.",
+   "stars": 88239,
+   "license": "MIT",
+   "language": "JavaScript",
+   "topics": [
+    "agent-skills",
+    "ai-agents",
+    "architecture-diagram",
+    "claude-code",
+    "claude-skills",
+    "codex",
+    "coding-agents",
+    "deepseek-harness",
+    "developer-tools",
+    "diagrams",
+    "diagrams-as-code",
+    "dsh-plugin",
+    "flowchart",
+    "llm",
+    "mermaid",
+    "opencode",
+    "sequence-diagram",
+    "software-architecture",
+    "system-design",
+    "visualization"
+   ],
+   "summary": "把想法、計畫或程式碼轉成互動式圖表，讓複雜系統一目了然。",
+   "audience": "需要視覺化系統設計、流程或知識的開發者與管理者",
+   "use_cases": [
+    {
+     "title": "系統設計視覺化",
+     "how": "與 AI 代理對話，輸入系統架構描述，自動生成互動式圖表"
+    },
+    {
+     "title": "技術文件自動化",
+     "how": "將技術問題或流程轉為圖表與說明文件，提升知識傳遞效率"
+    },
+    {
+     "title": "專案進度追蹤",
+     "how": "將專案里程碑與任務關係轉為圖表，方便團隊協作與進度管理"
+    }
+   ],
+   "mermaid": "flowchart LR\n  n0[\"使用者\"]\n  n1[\"AI 代理\"]\n  n2[\"圖表生成器\"]\n  n3[\"互動圖表\"]\n  n4[\"程式碼解析器\"]\n  n5[\"資料儲存\"]\n  n6[\"視覺化工具\"]\n  n7[\"導出服務\"]\n  n8[\"使用者介面\"]\n  n9[\"反饋回路\"]\n  n0 -->|輸入描述| n1\n  n1 -->|生成指令| n2\n  n2 -->|解析指令| n4\n  n4 -->|生成圖表| n6\n  n6 -->|產生互動圖表| n3\n  n3 -->|顯示圖表| n8\n  n0 -->|互動操作| n3\n  n3 -->|反饋修改| n9\n  n9 -->|更新指令| n1\n  n3 -->|導出圖表| n7",
+   "analyzed_at": 1792780200.7910593
+  },
+  {
+   "full_name": "hunxbyts/ghosttrack",
+   "html_url": "https://github.com/HunxByts/GhostTrack",
+   "description": "Useful tool to track location or mobile number",
+   "stars": 19842,
+   "license": "",
+   "language": "Python",
+   "topics": [
+    "cybersecurity",
+    "fyp",
+    "hacking",
+    "hacking-tool",
+    "indonesia",
+    "information",
+    "information-gathering",
+    "ip-geolocation",
+    "linux",
+    "osint",
+    "osint-python",
+    "osint-tool",
+    "pentesting",
+    "phone-number",
+    "python",
+    "python-hacking",
+    "termux",
+    "termux-hacks",
+    "termux-tool"
+   ],
+   "summary": "GhostTrack 可用於追蹤手機號碼或IP位址的地理位置資訊。",
+   "audience": "網路安全愛好者、資訊收集者、學生與研究者",
+   "use_cases": [
+    {
+     "title": "手機號碼地理追蹤",
+     "how": "透過手機號碼查詢目標用戶的地理位置與相關資訊。"
+    },
+    {
+     "title": "IP位址溯源分析",
+     "how": "利用IP位址追蹤目標用戶的網路位置與伺服器資訊。"
+    },
+    {
+     "title": "社交帳號情報挖掘",
+     "how": "透過使用者名稱查詢目標在社交平台的公開資訊與活動紀錄。"
+    }
+   ],
+   "mermaid": "flowchart LR\n  n0[\"UI\"]\n  n1[\"IP追蹤\"]\n  n2[\"手機追蹤\"]\n  n3[\"帳號追蹤\"]\n  n4[\"Seeker\"]\n  n5[\"資料庫\"]\n  n6[\"API服務\"]\n  n7[\"Python核心\"]\n  n8[\"終端機\"]\n  n9[\"顯示結果\"]\n  n0 -->|使用者操作| n1\n  n0 -->|使用者操作| n2\n  n0 -->|使用者操作| n3\n  n1 -->|請求API| n6\n  n2 -->|請求API| n6\n  n3 -->|請求API| n6\n  n6 -->|資料查詢| n5\n  n4 -->|IP輸出| n1\n  n7 -->|執行指令| n8\n  n7 -->|顯示結果| n9",
+   "analyzed_at": 1792777713.5127804
+  },
+  {
+   "full_name": "openbyteinc/quantdinger",
+   "html_url": "https://github.com/OpenByteInc/QuantDinger",
+   "description": "Open-source AI Trading OS, agent trading, and vibe trading, with Jev System One integration. Research, build Python strategies, backtest, and paper/live trade across crypto, stocks, and forex. Launch your own multi-tenant trading SaaS with built-in user management, billing, payments, and settlement.",
+   "stars": 13049,
+   "license": "Apache-2.0",
+   "language": "Python",
+   "topics": [
+    "agent",
+    "alpaca",
+    "backtesting",
+    "binance",
+    "crypto",
+    "exchange",
+    "finance",
+    "fintech",
+    "forex",
+    "jev",
+    "mcp-server",
+    "python",
+    "quant",
+    "quantitative-finance",
+    "saas",
+    "stocks",
+    "strategy",
+    "trade",
+    "typesafe-ai"
+   ],
+   "summary": "用 Python 編寫交易策略，回測、紙倉與實盤交易，整合 AI 與多交易所。",
+   "audience": "獨立交易者、量化策略開發者、小型團隊",
+   "use_cases": [
+    {
+     "title": "量化策略 SaaS 開發",
+     "how": "建立多租戶交易平臺，內建用戶管理、收費與結算系統，提供策略交易服務。"
+    },
+    {
+     "title": "AI 交易信號整合",
+     "how": "透過 Jev 系統與 MCP 服務，將 AI 信號轉換為交易指令，自動執行策略。"
+    },
+    {
+     "title": "跨交易所多資產交易",
+     "how": "支援加密貨幣、股票與外匯交易，透過 API 連接交易所，實現自動化交易。"
+    }
+   ],
+   "mermaid": "flowchart LR\n  n0[\"客戶端\"]\n  n1[\"Agent 網關\"]\n  n2[\"核心平台\"]\n  n3[\"分散式運行工作者\"]\n  n4[\"Kafka\"]\n  n5[\"基礎設施\"]\n  n6[\"可觀察性\"]\n  n7[\"交易流程\"]\n  n0 -->|請求| n1\n  n1 -->|指令| n2\n  n2 -->|分發| n3\n  n3 -->|訊息| n4\n  n4 -->|處理| n5\n  n5 -->|監控| n6\n  n7 -->|交易流程| n2",
+   "analyzed_at": 1792777700.0337448
+  },
+  {
+   "full_name": "galaxy-s10/billd-desk",
+   "html_url": "https://github.com/galaxy-s10/billd-desk",
+   "description": "基于Vue3 + WebRTC + Nodejs + Flutter搭建的远程桌面控制、游戏串流",
+   "stars": 8689,
+   "license": "MIT",
+   "language": "TypeScript",
+   "topics": [
+    "coturn",
+    "electron",
+    "flutter",
+    "nodejs",
+    "parsec",
+    "remote-desktop",
+    "rustdesk",
+    "socket-io",
+    "todesk",
+    "typescript",
+    "vue3",
+    "webrtc"
+   ],
+   "summary": "跨平台遠端桌面控制，類似ToDesk/向日葵功能，支援網頁、電腦、手機端控制。",
+   "audience": "需要遠端協助、遊戲串流、設備管理的企業與個人用戶",
+   "use_cases": [
+    {
+     "title": "遠端技術支援服務",
+     "how": "企業提供遠端技術支援，透過BilldDesk為客戶電腦進行診斷與維護，收取服務費。"
+    },
+    {
+     "title": "遊戲串流與跨平台操作",
+     "how": "遊戲開發者透過BilldDesk將遊戲串流至網頁或手機端，讓玩家跨平台進行遊戲操作與互動。"
+    },
+    {
+     "title": "設備遠端管理與監控",
+     "how": "企業透過BilldDesk遠端管理多台設備，進行系統更新、軟體安裝與監控，提升管理效率。"
+    }
+   ],
+   "mermaid": "flowchart LR\n  n0[\"Web端\"]\n  n1[\"電腦端\"]\n  n2[\"安卓端\"]\n  n3[\"中繼伺服器\"]\n  n4[\"主控端\"]\n  n5[\"被控端\"]\n  n6[\"資料庫\"]\n  n7[\"API服務\"]\n  n8[\"訊息中繼\"]\n  n9[\"遠端控制核心\"]\n  n0 -->|連線| n3\n  n1 -->|連線| n3\n  n2 -->|連線| n3\n  n3 -->|資料傳輸| n4\n  n3 -->|資料傳輸| n5\n  n4 -->|控制指令| n5\n  n5 -->|畫面與狀態| n4\n  n6 -->|資料存取| n7\n  n7 -->|訊息處理| n8\n  n8 -->|控制指令| n9\n  n9 -->|控制執行| n4\n  n9 -->|控制執行| n5",
+   "analyzed_at": 1792777687.5871298
+  },
+  {
+   "full_name": "jub0t/concat",
+   "html_url": "https://github.com/jub0t/Concat",
+   "description": "The truly free, open-source, local-first, cross-platform CapCut replacement. Scriptable through a JSON-RPC API & MCP.",
+   "stars": 11042,
+   "license": "AGPL-3.0",
+   "language": "Rust",
+   "topics": [
+    "ffmpeg",
+    "free-video-editor",
+    "model-context-protocol",
+    "non-linear-editor",
+    "offline-first",
+    "open-source-video-editor",
+    "self-hosted",
+    "video-editing",
+    "video-editing-automation",
+    "video-editing-software",
+    "video-editing-tools",
+    "video-editor",
+    "voice-cloning",
+    "youtube-automation",
+    "youtube-shorts"
+   ],
+   "summary": "Concat 是免費開源的視頻編輯軟體，能取代 CapCut 進行剪輯、配音、字幕與特效製作。",
+   "audience": "需要離線編輯、自訂 AI 模型、跨平台使用的視頻創作者與企業。",
+   "use_cases": [
+    {
+     "title": "TikTok 短影片自動剪輯",
+     "how": "透過 JSON-RPC API 自動生成字幕與配音，快速組合素材製作短影片。"
+    },
+    {
+     "title": "企業 YouTube 影片製作",
+     "how": "離線處理高解析度影片，加入特效與字幕，直接輸出 4K 視頻上傳。"
+    },
+    {
+     "title": "Podcast 剪輯與音效處理",
+     "how": "使用內建的音訊清理功能，精準剪裁語音片段並加入特殊音效。"
+    }
+   ],
+   "mermaid": "flowchart LR\n  n0[\"用戶界面\"]\n  n1[\"GPU合成器\"]\n  n2[\"AI模型\"]\n  n3[\"FFmpeg\"]\n  n4[\"MCP服務器\"]\n  n5[\"JSON-RPC API\"]\n  n6[\"本地儲存\"]\n  n7[\"時間軸\"]\n  n8[\"導出引擎\"]\n  n9[\"腳本接口\"]\n  n0 -->|渲染| n1\n  n2 -->|模型輸出| n1\n  n3 -->|編碼| n8\n  n4 -->|API 調用| n5\n  n6 -->|模型載入| n2\n  n7 -->|剪輯指令| n1\n  n9 -->|腳本調用| n5",
+   "analyzed_at": 1792777653.6190946
+  },
+  {
+   "full_name": "1weiho/cinematic-shot",
+   "html_url": "https://github.com/1weiho/cinematic-shot",
+   "description": "An agent skill for directing cinematic product launch films",
+   "stars": 192,
+   "license": "MIT",
+   "language": "",
+   "topics": [
+    "skills"
+   ],
+   "summary": "協助製作電影感產品發佈影片與靜態圖像",
+   "audience": "產品經理、行銷團隊、創作者",
+   "use_cases": [
+    {
+     "title": "製作產品發佈影片",
+     "how": "透過指令生成電影感影片，用於產品宣傳與品牌曝光。"
+    },
+    {
+     "title": "生成社交媒體圖片",
+     "how": "自動生成符合品牌風格的靜態圖片，用於社群媒體推廣與廣告投放。"
+    },
+    {
+     "title": "製作發佈會素材",
+     "how": "生成高質感圖片與影片，用於產品發佈會與活動宣傳。"
+    }
+   ],
+   "mermaid": "flowchart LR\n  n0[\"故事腳本\"]\n  n1[\"場景設定\"]\n  n2[\"鏡頭清單\"]\n  n3[\"燈光設定\"]\n  n4[\"動畫控制\"]\n  n5[\"渲染引擎\"]\n  n6[\"靜態圖像\"]\n  n7[\"音效設計\"]\n  n0 -->|導向| n1\n  n1 -->|生成| n2\n  n2 -->|導向| n3\n  n3 -->|導向| n4\n  n4 -->|輸出| n5\n  n5 -->|生成| n6\n  n7 -->|整合| n5",
+   "analyzed_at": 1792777616.092236
+  },
+  {
+   "full_name": "d4vinci/scrapling",
+   "html_url": "https://github.com/D4Vinci/Scrapling",
+   "description": "🕷️ A Web Scraping framework that handles everything from a single request to a full-scale crawl! Don't be shy, join here: https://discord.gg/EMgGbDceNQ and follow here for daily tips and tricks: https://x.com/Scrapling_dev",
+   "stars": 89268,
+   "license": "BSD-3-Clause",
+   "language": "Python",
+   "topics": [
+    "ai",
+    "ai-scraping",
+    "automation",
+    "crawler",
+    "crawling",
+    "crawling-python",
+    "data",
+    "data-extraction",
+    "mcp",
+    "mcp-server",
+    "playwright",
+    "python",
+    "scraping",
+    "selectors",
+    "stealth",
+    "web-scraper",
+    "web-scraping",
+    "web-scraping-python",
+    "webscraping",
+    "xpath"
+   ],
+   "summary": "自動爬取網頁資料，支援靜態與動態網頁，並能處理 JavaScript 與 API 資料。",
+   "audience": "需要資料提取、網站監測與自動化任務的開發者與企業",
+   "use_cases": [
+    {
+     "title": "網站資料監測與分析",
+     "how": "定期爬取網站資料，分析趨勢與用戶行為，用於市場研究與競爭分析。"
+    },
+    {
+     "title": "API 資料整合與存儲",
+     "how": "從多個 API 獲取資料，整合至資料庫或 CSV，用於後端系統與數據分析。"
+    },
+    {
+     "title": "自動化報價與價格追蹤",
+     "how": "爬取商品價格與資訊，自動更新庫存與報價系統，提升業務效率。"
+    }
+   ],
+   "mermaid": "flowchart LR\n  n0[\"請求處理\"]\n  n1[\"資料解析\"]\n  n2[\"爬蟲引擎\"]\n  n3[\"資料存儲\"]\n  n4[\"AI 服務\"]\n  n5[\"命令列\"]\n  n6[\"代理伺服器\"]\n  n7[\"會話管理\"]\n  n8[\"緩存系統\"]\n  n9[\"排程器\"]\n  n0 -->|傳遞資料| n1\n  n1 -->|儲存結果| n3\n  n2 -->|發起請求| n0\n  n2 -->|解析頁面| n1\n  n4 -->|AI 控制| n2\n  n5 -->|指令控制| n2\n  n6 -->|代理請求| n0\n  n7 -->|會話管理| n0\n  n8 -->|緩存資料| n0\n  n9 -->|排程任務| n2",
+   "analyzed_at": 1792746035.9208868
+  },
+  {
+   "full_name": "egonex-ai/understand-anything",
+   "html_url": "https://github.com/Egonex-AI/Understand-Anything",
+   "description": "Graphs that teach > graphs that impress. Turn any code into an interactive knowledge graph you can explore, search, and ask questions about. Works with Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more.",
+   "stars": 87791,
+   "license": "MIT",
+   "language": "TypeScript",
+   "topics": [
+    "antigravity-skills",
+    "business-knowledge",
+    "claude-code",
+    "claude-skills",
+    "codebase-analysis",
+    "codex",
+    "codex-skills",
+    "developer-tools-ai-agent",
+    "gemini-cli-skills",
+    "karpathy-llm-wiki",
+    "knowledge-base",
+    "knowledge-graph",
+    "memory",
+    "opencode-skills",
+    "pi-agent",
+    "understandcode",
+    "vibe-coding"
+   ],
+   "summary": "把任何程式碼轉成可互動的知識圖，輕鬆探索、搜尋與提問。",
+   "audience": "開發者、產品經理、企業團隊",
+   "use_cases": [
+    {
+     "title": "團隊上手新專案",
+     "how": "透過知識圖快速理解專案結構與功能關聯，縮短學習曲線。"
+    },
+    {
+     "title": "商業邏輯分析",
+     "how": "將程式碼與業務流程對應，可視化流程與決策點，協助產品設計。"
+    },
+    {
+     "title": "知識庫優化",
+     "how": "將LLM知識庫轉為可導航的知識圖，提升知識管理與搜尋效率。"
+    }
+   ],
+   "mermaid": "flowchart LR\n  n0[\"程式碼分析器\"]\n  n1[\"LLM代理\"]\n  n2[\"圖形構建器\"]\n  n3[\"知識圖\"]\n  n4[\"互動看板\"]\n  n5[\"搜尋引擎\"]\n  n6[\"語言處理器\"]\n  n7[\"配置管理器\"]\n  n8[\"輸出生成器\"]\n  n9[\"用戶介面\"]\n  n0 -->|輸出分析結果| n1\n  n1 -->|生成圖結構| n2\n  n2 -->|建立知識圖| n3\n  n3 -->|提供視覺化資料| n4\n  n3 -->|供搜尋引擎使用| n5\n  n6 -->|生成語言內容| n8\n  n7 -->|傳遞語言設定| n8\n  n9 -->|顯示互動看板| n4",
+   "analyzed_at": 1792745994.6916897
+  },
+  {
+   "full_name": "uclanlp/openvlharness",
+   "html_url": "https://github.com/uclanlp/OpenVLHarness",
+   "description": "Official Code for OpenVLHarness: Real-World Visual Agentic Tool‑Use with Multimodal Memory",
+   "stars": 202,
+   "license": "MIT",
+   "language": "Python",
+   "topics": [],
+   "summary": "把大模型變成能看圖、推理、寫程式、搜尋的智慧助手。",
+   "audience": "需要視覺推理與多模態處理的企業與研究者",
+   "use_cases": [
+    {
+     "title": "智慧客服視覺分析",
+     "how": "透過視覺定位與OCR讀取圖片，分析客戶現場問題並提供解決方案"
+    },
+    {
+     "title": "自動化報告生成",
+     "how": "利用深度估計與空間推理生成視覺化報告，提升數據分析效率"
+    },
+    {
+     "title": "多媒體內容管理",
+     "how": "透過影像搜尋與網頁爬蟲自動整理與標註多媒體資料庫"
+    }
+   ],
+   "mermaid": "flowchart LR\n  n0[\"功能層\"]\n  n1[\"多模態記憶\"]\n  n2[\"程式碼代理\"]\n  n3[\"Qwen3-VL-8B-Instruct\"]\n  n4[\"Serper\"]\n  n5[\"PaddleOCR-VL\"]\n  n6[\"Depth Anything 3\"]\n  n7[\"SAM 3\"]\n  n8[\"模型路由\"]\n  n9[\"工具後端\"]\n  n0 -->|儲存證據| n1\n  n1 -->|提供資料| n2\n  n3 -->|處理請求| n0\n  n8 -->|路由模型| n3\n  n9 -->|提供工具| n8",
+   "analyzed_at": 1792739430.9335973
+  }
+ ],
+ "alchemy": [
+  {
+   "full_names": [
+    "uclanlp/openvlharness",
+    "zagitta/gpu-unlock"
+   ],
+   "title": "智視通",
+   "pitch": "視覺推理智慧助手，提升企業效率與決策品質。",
+   "audience": "需要視覺分析、自動報告與多媒體管理的企業與研究機構。",
+   "how": "OpenVLHarness 提供視覺推理與多模態處理能力，GPU Unlock 提升計算效能，兩者結合後，可快速處理視覺資料並生成報告。透過 API 串接，企業可整合至現有系統，實現自動化分析與決策支援。",
+   "mermaid": "flowchart LR\n  n0[\"GPU Unlock\"]\n  n1[\"OpenVLHarness\"]\n  n2[\"資料庫\"]\n  n3[\"API 服務\"]\n  n4[\"企業系統\"]\n  n0 -->|效能提升| n1\n  n1 -->|資料存取| n2\n  n2 -->|資料處理| n3\n  n3 -->|API 串接| n4",
+   "prd_md": "# ## 問題\n企業在處理視覺資料時，常面臨分析效率低、報告生成耗時、多媒體管理困難等問題。\n\n## ## 用戶\n需要視覺分析、自動報告與多媒體管理的企業與研究機構。\n\n## ## 核心功能\n1. 視覺推理與多模態處理：透過 OpenVLHarness 進行圖像分析與推理。\n2. 高效能計算：透過 GPU Unlock 提升計算效能，加快處理速度。\n3. 自動報告生成：根據分析結果生成視覺化報告。\n4. 多媒體管理：自動整理與標註多媒體資料。\n\n## ## 架構\n- GPU Unlock：提升計算效能\n- OpenVLHarness：視覺推理與多模態處理\n- 資料庫：儲存處理結果與資料\n- API 服務：提供外部系統串接\n- 企業系統：整合至現有系統，實現自動化分析與決策支援\n\n## ## MVP 範圍\n- 開發 GPU Unlock 串接模組\n- 集成 OpenVLHarness 進行視覺推理\n- 建立資料庫與 API 服務\n- 提供企業系統串接介面\n\n## ## 風險\n1. GPU Unlock 依賴特定系統環境，可能影響兼容性。\n2. OpenVLHarness 的模型訓練與推理需大量計算資源。\n3. 企業系統整合可能需要額外開發與測試時間。",
+   "created_at": 1793026711.8406425
+  }
+ ]
+}

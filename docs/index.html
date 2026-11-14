@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SolGeGoodShxt 知識庫</title>
+<meta name="description" content="用 LINE 丟開源專案，本機 AI 幫你看懂、想用途、畫架構。這裡是目前收藏的公開內容。">
+<style>
+:root{
+  --bg:#f7f5f0;--card:#fff;--ink:#1d1b18;--mute:#6b665d;--line:#e4dfd4;
+  --accent:#0b7a5c;--accent-ink:#fff;--chip:#eef3ef;--warm:#c2410c;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#121311;--card:#1b1d1a;--ink:#ecebe6;--mute:#a19d93;--line:#2c2f2a;
+  --accent:#3fbf93;--accent-ink:#0d1210;--chip:#1f2a24;--warm:#fb923c;
+}}
+:root[data-theme="dark"]{
+  --bg:#121311;--card:#1b1d1a;--ink:#ecebe6;--mute:#a19d93;--line:#2c2f2a;
+  --accent:#3fbf93;--accent-ink:#0d1210;--chip:#1f2a24;--warm:#fb923c;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,"Noto Sans TC","Microsoft JhengHei",sans-serif}
+a{color:var(--accent)}
+.wrap{max-width:1100px;margin:0 auto;padding:0 16px}
+header{padding:40px 0 16px;border-bottom:1px solid var(--line)}
+h1{margin:0;font-size:clamp(28px,5vw,44px);letter-spacing:-.02em}
+.lede{color:var(--mute);margin:8px 0 0;max-width:60ch}
+.stats{display:flex;gap:24px;flex-wrap:wrap;margin-top:16px;color:var(--mute);font-size:14px}
+.stats b{color:var(--ink);font-size:22px;display:block}
+.bar{position:sticky;top:0;z-index:2;background:var(--bg);padding:12px 0;display:flex;gap:8px;flex-wrap:wrap;border-bottom:1px solid var(--line)}
+.bar input,.bar select{font:inherit;padding:8px 12px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink)}
+.bar input{flex:1 1 220px;min-width:0}
+h2{margin:32px 0 12px;font-size:20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.card h3{margin:0;font-size:16px;word-break:break-word}
+.card h3 a{color:var(--ink);text-decoration:none}
+.card h3 a:hover{text-decoration:underline}
+.sum{margin:0;font-size:15px}
+.meta{display:flex;gap:6px;flex-wrap:wrap;font-size:12px;color:var(--mute)}
+.chip{background:var(--chip);border-radius:999px;padding:2px 8px}
+.aud{font-size:13px;color:var(--mute);margin:0}
+.card button{align-self:flex-start;font:inherit;font-size:13px;border:1px solid var(--line);background:none;color:var(--accent);border-radius:8px;padding:4px 10px;cursor:pointer;margin-top:auto}
+.more{display:none}
+.card.open .more{display:block}
+ul.uses{margin:0;padding-left:18px;font-size:14px}
+ul.uses li{margin-bottom:6px}
+.diagram{overflow-x:auto;background:var(--bg);border-radius:8px;padding:8px;margin-top:8px}
+.alc{border-left:4px solid var(--warm)}
+.alc .pitch{font-weight:600}
+.prd{font-size:14px;white-space:pre-wrap;background:var(--bg);border-radius:8px;padding:12px;max-height:320px;overflow:auto}
+.empty{color:var(--mute);padding:24px 0}
+footer{color:var(--mute);font-size:13px;padding:40px 0;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head>
+<body>
+<header class="wrap">
+  <h1>SolGeGoodShxt 知識庫</h1>
+  <p class="lede">在 LINE 丟一個 GitHub 連結或短影片，本機 AI 會認出是哪個開源專案，用白話講它能做什麼、可以怎麼賺錢，再畫出架構圖。這裡是目前收藏的全部內容。</p>
+  <div class="stats" id="stats"></div>
+</header>
+
+<div class="wrap">
+  <div class="bar">
+    <input id="q" type="search" placeholder="搜尋：名稱、用途、對象…" aria-label="搜尋">
+    <select id="lang" aria-label="語言"><option value="">所有語言</option></select>
+    <select id="sort" aria-label="排序">
+      <option value="new">最新收藏</option>
+      <option value="stars">星星最多</option>
+    </select>
+  </div>
+
+  <section id="alchemy-sec">
+    <h2>A+B 煉金點子</h2>
+    <div class="grid" id="alchemy"></div>
+  </section>
+
+  <section>
+    <h2 id="repo-h">收藏的 repo</h2>
+    <div class="grid" id="repos"></div>
+  </section>
+
+  <footer>
+    內容由本機模型（Ollama qwen3:8b）自動產生，可能有錯，請以原 repo 為準。
+    資料匯出時間：<span id="exported"></span>。
+    <a href="https://github.com/Kaikai0Database/SolGeGoodShxt">原始想法與設計</a>
+  </footer>
+</div>
+
+<script type="module">
+let mermaid = null;
+try {
+  mermaid = (await import('https://cdn.jsdelivr.net/npm/mermaid@11.4.1/dist/mermaid.esm.min.mjs')).default;
+  const dark = matchMedia('(prefers-color-scheme: dark)').matches;
+  mermaid.initialize({ startOnLoad: false, theme: dark ? 'dark' : 'neutral', securityLevel: 'strict' });
+} catch (e) { console.warn('mermaid 載入失敗', e); }
+
+const $ = (s) => document.querySelector(s);
+const el = (tag, cls, text) => {
+  const n = document.createElement(tag);
+  if (cls) n.className = cls;
+  if (text != null) n.textContent = text;
+  return n;
+};
+const fmtDate = (ts) => new Date(ts * 1000).toLocaleDateString('zh-TW');
+let diagramId = 0;
+
+async function drawDiagram(box, code) {
+  if (!code) return;
+  const div = el('div', 'diagram');
+  box.append(div);
+  if (!mermaid) { div.append(el('pre', null, code)); return; }
+  try {
+    const { svg } = await mermaid.render('d' + (++diagramId), code);
+    div.innerHTML = svg;
+  } catch { div.append(el('pre', null, code)); }
+}
+
+function safeUrl(u) {
+  try { const x = new URL(u); return x.protocol === 'https:' ? x.href : '#'; } catch { return '#'; }
+}
+
+function repoCard(r) {
+  const c = el('article', 'card');
+  const h = el('h3');
+  const a = el('a', null, r.full_name);
+  a.href = safeUrl(r.html_url); a.target = '_blank'; a.rel = 'noopener';
+  h.append(a); c.append(h);
+
+  const meta = el('div', 'meta');
+  if (r.language) meta.append(el('span', 'chip', r.language));
+  if (r.stars != null) meta.append(el('span', 'chip', '★ ' + r.stars.toLocaleString()));
+  if (r.license) meta.append(el('span', 'chip', r.license));
+  meta.append(el('span', 'chip', fmtDate(r.analyzed_at)));
+  c.append(meta);
+
+  c.append(el('p', 'sum', r.summary || r.description || ''));
+  if (r.audience) c.append(el('p', 'aud', '適合：' + r.audience));
+
+  const more = el('div', 'more');
+  const box = el('div');
+  if (Array.isArray(r.use_cases) && r.use_cases.length) {
+    box.append(el('strong', null, '可以怎麼用'));
+    const ul = el('ul', 'uses');
+    for (const u of r.use_cases) {
+      const li = el('li');
+      li.append(el('b', null, (u.title || '') + '：'), document.createTextNode(u.how || ''));
+      ul.append(li);
+    }
+    box.append(ul);
+  }
+  more.append(box);
+  c.append(more);
+
+  const btn = el('button', null, '看用途與架構圖');
+  let drawn = false;
+  btn.onclick = async () => {
+    const open = c.classList.toggle('open');
+    btn.textContent = open ? '收起' : '看用途與架構圖';
+    if (open && !drawn) { drawn = true; await drawDiagram(box, r.mermaid); }
+  };
+  c.append(btn);
+  c.dataset.text = [r.full_name, r.description, r.summary, r.audience,
+    ...(r.use_cases || []).map(u => (u.title || '') + (u.how || ''))].join(' ').toLowerCase();
+  return c;
+}
+
+function alchemyCard(x) {
+  const c = el('article', 'card alc');
+  c.append(el('h3', null, x.title || '（未命名）'));
+  const meta = el('div', 'meta');
+  for (const n of x.full_names || []) meta.append(el('span', 'chip', n));
+  c.append(meta);
+  c.append(el('p', 'sum pitch', x.pitch || ''));
+  if (x.audience) c.append(el('p', 'aud', '對象：' + x.audience));
+  if (x.how) c.append(el('p', 'sum', x.how));
+  const more = el('div', 'more');
+  const box = el('div');
+  if (x.prd_md) { box.append(el('strong', null, 'PRD')); box.append(el('div', 'prd', x.prd_md)); }
+  more.append(box); c.append(more);
+  const btn = el('button', null, '看 PRD 與架構圖');
+  let drawn = false;
+  btn.onclick = async () => {
+    const open = c.classList.toggle('open');
+    btn.textContent = open ? '收起' : '看 PRD 與架構圖';
+    if (open && !drawn) { drawn = true; await drawDiagram(box, x.mermaid); }
+  };
+  c.append(btn);
+  return c;
+}
+
+const data = await (await fetch('data.json', { cache: 'no-cache' })).json();
+const repos = data.repos;
+
+$('#exported').textContent = new Date(data.exported_at).toLocaleString('zh-TW');
+const langs = [...new Set(repos.map(r => r.language).filter(Boolean))].sort();
+for (const l of langs) { const o = el('option', null, l); o.value = l; $('#lang').append(o); }
+const stat = (n, label) => { const d = el('div'); d.append(el('b', null, String(n)), document.createTextNode(label)); return d; };
+$('#stats').append(stat(repos.length, '個 repo'), stat(data.alchemy.length, '個煉金點子'), stat(langs.length, '種語言'));
+
+if (data.alchemy.length) data.alchemy.forEach(x => $('#alchemy').append(alchemyCard(x)));
+else $('#alchemy-sec').hidden = true;
+
+const cards = repos.map(r => ({ r, node: repoCard(r) }));
+function render() {
+  const q = $('#q').value.trim().toLowerCase();
+  const lang = $('#lang').value;
+  const sort = $('#sort').value;
+  const list = cards
+    .filter(({ r, node }) => (!lang || r.language === lang) && (!q || node.dataset.text.includes(q)))
+    .sort((a, b) => sort === 'stars' ? (b.r.stars || 0) - (a.r.stars || 0) : b.r.analyzed_at - a.r.analyzed_at);
+  const box = $('#repos');
+  box.replaceChildren(...list.map(x => x.node));
+  if (!list.length) box.append(el('p', 'empty', '找不到符合的 repo。'));
+  $('#repo-h').textContent = `收藏的 repo（${list.length}）`;
+}
+$('#q').oninput = render; $('#lang').onchange = render; $('#sort').onchange = render;
+render();
+</script>
+</body>
+</html>
