@@ -104,6 +104,11 @@ git push
 
 GitHub Pages 會在一兩分鐘內更新，網址不變。
 
+## 讓 AI 接手
+
+給 AI（Claude Code、Codex 等）的規則寫在 [`AGENTS.md`](AGENTS.md)：
+怎麼加新頁面、怎麼加新內容、哪些資料不能公開、commit 前要跑 `tools/check_secrets.py`。
+
 ## 還沒做的
 
 - 沙盒試跑 repo

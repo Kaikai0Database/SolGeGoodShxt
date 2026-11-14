@@ -1,0 +1,46 @@
+/* 全站共用樣式。新頁面一律 <link rel="stylesheet" href="style.css">，不要另寫顏色。 */
+:root{
+  --bg:#f7f5f0;--card:#fff;--ink:#1d1b18;--mute:#6b665d;--line:#e4dfd4;
+  --accent:#0b7a5c;--accent-ink:#fff;--chip:#eef3ef;--warm:#c2410c;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#121311;--card:#1b1d1a;--ink:#ecebe6;--mute:#a19d93;--line:#2c2f2a;
+  --accent:#3fbf93;--accent-ink:#0d1210;--chip:#1f2a24;--warm:#fb923c;
+}}
+:root[data-theme="dark"]{
+  --bg:#121311;--card:#1b1d1a;--ink:#ecebe6;--mute:#a19d93;--line:#2c2f2a;
+  --accent:#3fbf93;--accent-ink:#0d1210;--chip:#1f2a24;--warm:#fb923c;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,"Noto Sans TC","Microsoft JhengHei",sans-serif}
+a{color:var(--accent)}
+.wrap{max-width:1100px;margin:0 auto;padding:0 16px}
+header{padding:40px 0 16px;border-bottom:1px solid var(--line)}
+h1{margin:0;font-size:clamp(28px,5vw,44px);letter-spacing:-.02em}
+.lede{color:var(--mute);margin:8px 0 0;max-width:60ch}
+.stats{display:flex;gap:24px;flex-wrap:wrap;margin-top:16px;color:var(--mute);font-size:14px}
+.stats b{color:var(--ink);font-size:22px;display:block}
+.bar{position:sticky;top:0;z-index:2;background:var(--bg);padding:12px 0;display:flex;gap:8px;flex-wrap:wrap;border-bottom:1px solid var(--line)}
+.bar input,.bar select{font:inherit;padding:8px 12px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink)}
+.bar input{flex:1 1 220px;min-width:0}
+h2{margin:32px 0 12px;font-size:20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.card h3{margin:0;font-size:16px;word-break:break-word}
+.card h3 a{color:var(--ink);text-decoration:none}
+.card h3 a:hover{text-decoration:underline}
+.sum{margin:0;font-size:15px}
+.meta{display:flex;gap:6px;flex-wrap:wrap;font-size:12px;color:var(--mute)}
+.chip{background:var(--chip);border-radius:999px;padding:2px 8px}
+.aud{font-size:13px;color:var(--mute);margin:0}
+.card button{align-self:flex-start;font:inherit;font-size:13px;border:1px solid var(--line);background:none;color:var(--accent);border-radius:8px;padding:4px 10px;cursor:pointer;margin-top:auto}
+.more{display:none}
+.card.open .more{display:block}
+ul.uses{margin:0;padding-left:18px;font-size:14px}
+ul.uses li{margin-bottom:6px}
+.diagram{overflow-x:auto;background:var(--bg);border-radius:8px;padding:8px;margin-top:8px}
+.alc{border-left:4px solid var(--warm)}
+.alc .pitch{font-weight:600}
+.prd{font-size:14px;white-space:pre-wrap;background:var(--bg);border-radius:8px;padding:12px;max-height:320px;overflow:auto}
+.empty{color:var(--mute);padding:24px 0}
+footer{color:var(--mute);font-size:13px;padding:40px 0;border-top:1px solid var(--line);margin-top:40px}
